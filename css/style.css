@@ -267,6 +267,7 @@ section.features div p {
     width: 85%;
     top: 65%;
     left: 50%;
+    line-height: 1.5;
     transform: translate(-50%, 0);
     text-align: justify;
     font-size: 1.1rem;
