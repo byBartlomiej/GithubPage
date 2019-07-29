@@ -768,6 +768,26 @@ section.popup.active {
     z-index: 2;
 }
 
+section.popup span.hide {
+    display: none;
+}
+
+section.popup.active span.hide {
+    display: block;
+    position: absolute;
+    top: 5%;
+    right: 2%;
+    transform: translate(-10%, 5%);
+    font-size: 40px;
+    cursor: pointer;
+    color: crimson;
+    z-index: 1;
+}
+
+section.popup.active span.hide:hover {
+    color: green;
+}
+
 section.popup div.popup {
     display: none;
 }
@@ -795,20 +815,6 @@ section.popup.active div.popup p {
     font-size: 1rem;
     text-align: left;
     padding: .3% 1%;
-}
-
-section.popup.active div.popup span.hide {
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(-10%, 5%);
-    font-size: 40px;
-    cursor: pointer;
-    color: crimson;
-}
-
-section.popup.active div.popup span.hide:hover {
-    color: green;
 }
 
 /* STRONA O MNIE */
