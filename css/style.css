@@ -109,7 +109,7 @@ header div.header h2 {
 
 header button.burger,
 section.aboutMe a,
-section.portfolio a,
+section.game a,
 div.blog article a {
     position: fixed;
     left: 20px;
@@ -135,7 +135,7 @@ header button.burger.off {
 
 header button.burger:hover,
 section.aboutMe a:hover,
-section.portfolio a:hover,
+section.game a:hover,
 div.blog article a:hover {
     background-color: var(--btnBgcOn);
     color: black;
@@ -829,7 +829,7 @@ section.aboutMe {
 }
 
 section.aboutMe a,
-section.portfolio a,
+section.game a,
 div.blog article a {
     text-align: center;
     line-height: 50px;
@@ -837,7 +837,7 @@ div.blog article a {
 }
 
 section.aboutMe a:hover i,
-section.portfolio a:hover i,
+section.game a:hover i,
 div.blog article a:hover i {
     color: black;
 }
