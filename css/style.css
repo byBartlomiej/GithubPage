@@ -926,6 +926,10 @@ section.game {
     background-color: black;
 }
 
+section.game a:hover {
+    background-color: #fff;
+}
+
 section div.h1 {
     position: absolute;
     top: 100%;
