@@ -953,7 +953,7 @@ section.game div#board {
     width: 100vh;
     height: 100vh;
     margin: auto;
-    background-image: url('board.jpg');
+    background-image: url('../img/board.jpg');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -1026,14 +1026,14 @@ section.game div#board form {
 }
 
 .hit {
-    background-image: url('ship.png');
+    background-image: url('../img/ship.png');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
 }
 
 .miss {
-    background-image: url('miss.png');
+    background-image: url('../img/miss.png');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
