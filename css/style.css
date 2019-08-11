@@ -135,7 +135,7 @@ header button.burger.off {
 
 header button.burger:hover,
 section.aboutMe a:hover,
-section.game a:hover,
+section.game a,
 div.blog article a:hover {
     background-color: var(--btnBgcOn);
     color: black;
@@ -837,7 +837,6 @@ div.blog article a {
 }
 
 section.aboutMe a:hover i,
-section.game a:hover i,
 div.blog article a:hover i {
     color: black;
 }
