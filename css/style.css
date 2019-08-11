@@ -824,7 +824,6 @@ section.aboutMe {
     width: 100%;
     height: 100vh;
     overflow: hidden;
-    /* background-color: #ddd; */
     background-color: #dfeefc;
     position: relative;
 }
@@ -917,26 +916,28 @@ section.aboutMe div.aboutMe p {
     }
 }
 
-/* STRONA PORTFOLIO */
-/* portfolio.html */
+/* STRONA Gra w statki */
+/* graWstatki.html */
 
-section.portfolio {
+section.game {
     position: relative;
     height: 100vh;
     width: 100%;
     overflow-x: hidden;
+    background-color: black;
 }
 
-section.portfolio div {
+section div.h1 {
     position: absolute;
     top: 100%;
     left: 2%;
-    width: 100vw;
+    width: 100vh;
     transform: rotate(-90deg);
     transform-origin: 0 0;
+    z-index: 1;
 }
 
-section.portfolio div h1 {
+section div.h1 h1 {
     background-image: var(--gradient);
     height: 10vh;
     line-height: 10vh;
@@ -945,8 +946,97 @@ section.portfolio div h1 {
     min-height: 50px;
     letter-spacing: 2px;
     font-family: var(--ffMain);
-    border-top: var(--borderStyle);
-    border-bottom: var(--borderStyle);
+}
+
+section.game div#board {
+    position: relative;
+    width: 100vh;
+    height: 100vh;
+    margin: auto;
+    background-image: url('board.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+section.game div#messageArea {
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    width: 30vw;
+    height: 6vh;
+    box-shadow: 0 0 5px 0 chartreuse;
+    transform: translate(-50%, 0);
+    background-color: rgb(137, 250, 137);
+    text-align: center;
+    line-height: 6vh;
+    font-family: sans-serif;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+
+section.game div#board table {
+    position: absolute;
+    top: 17.4vh;
+    left: 16.8vh;
+    border-spacing: 0px;
+}
+
+section.game div#board table tr td {
+    width: 9.3vh;
+    height: 9.35vh;
+}
+
+section.game div#board form {
+    position: absolute;
+    display: flex;
+    top: 10%;
+    left: 70%;
+    width: 15vw;
+    height: 6vh;
+    box-shadow: 0 0 5px 0 chartreuse;
+    font-family: var(--ffMain);
+}
+
+#guessInput,
+#fireButton {
+    width: 35%;
+    height: 100%;
+    text-align: center;
+    border: none;
+    background-color: rgb(137, 250, 137);
+    font-size: 1.2rem;
+}
+
+#fireButton {
+    width: 65%;
+    cursor: pointer;
+    border-left: 5px solid darkorange;
+    transition: .2s;
+    outline: none;
+}
+
+#fireButton:hover {
+    background-color: darkorange;
+}
+
+#fireButton:active {
+    background-color: orangered;
+    border-left: 5px solid orangered;
+}
+
+.hit {
+    background-image: url('ship.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.miss {
+    background-image: url('miss.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
 
 /* blog.html 
