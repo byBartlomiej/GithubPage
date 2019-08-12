@@ -33,15 +33,15 @@ var model = {
     shipLength: 3,
     shipsSunk: 0,
     ships: [{
-            locations: ['06', '16', '26'],
+            locations: [0, 0, 0],
             hits: ['', '', '']
         },
         {
-            locations: ['24', '34', '44'],
+            locations: [0, 0, 0],
             hits: ['', '', '']
         },
         {
-            locations: ['10', '11', '12'],
+            locations: [0, 0, 0],
             hits: ['', '', '']
         }
     ],
@@ -74,6 +74,49 @@ var model = {
         }
         view.displayMiss(guess);
         view.displayMessage('Pudło...');
+        return false;
+    },
+    generateShipLocations: function () {
+        var locations;
+        for (var i = 0; i < this.numShips; i++) {
+            do {
+                locations = this.generateShip();
+            } while (this.collision(locations));
+            this.ships[i].locations = locations;
+        }
+        console.log("Tablica okrętów: ");
+        console.log(this.ships);
+    },
+    generateShip: function () {
+        var direction = Math.floor(Math.random() * 2);
+        var row, col;
+        if (direction === 1) {
+            row = Math.floor(Math.random() * this.boardSize);
+            col = Math.floor(Math.random() * (this.boardSize - this.shipLength));
+        } else {
+            col = Math.floor(Math.random() * this.boardSize);
+            row = Math.floor(Math.random() * (this.boardSize - this.shipLength));
+        }
+        var newShipLocations = [];
+        for (var i = 0; i < this.shipLength; i++) {
+            if (direction === 1) {
+                newShipLocations.push(row + "" + (col + i));
+            } else {
+                newShipLocations.push((row + i) + "" + col);
+            }
+        }
+        return newShipLocations;
+    },
+
+    collision: function (locations) {
+        for (var i = 0; i < this.numShips; i++) {
+            var ship = this.ships[i];
+            for (var j = 0; j < locations.length; j++) {
+                if (ship.locations.indexOf(locations[j]) >= 0) {
+                    return true;
+                }
+            }
+        }
         return false;
     }
 };
@@ -114,57 +157,29 @@ function parseGuess(guess) {
     return null;
 };
 
-function init() {
-    var fireButton = document.getElementById('fireButton');
-    fireButton.onclick = handleFireButton;
-    var guessInput = document.getElementById('guessInput');
-    guessInput.onkeypress = handleKeyPress;
-}
-
 function handleFireButton() {
     var guessInput = document.getElementById('guessInput');
     var guess = guessInput.value;
     controller.processGuess(guess);
     guessInput.value = '';
-}
+};
 
 function handleKeyPress(e) {
     var fireButton = document.getElementById('fireButton');
+    e = e || window.event;
     if (e.keyCode === 13) {
         fireButton.click();
         return false;
     }
-}
+};
+
 window.onload = init;
 
-// var randomLoc = Math.floor(Math.random() * 5);
-// var location1 = randomLoc;
-// var location2 = location1 + 1;
-// var location3 = location2 + 1;
-// var guess;
-// var guesses = 0;
-// var hits = 0;
-// var isSunk = false;
-// //Pętla dopóki okręt nie jest zatopiony, gramy dalej
-// while (isSunk == false) {
-//     //pobranie komórki do sprawdzenia
-//     guess = prompt('Gotów, cel, pal! (podaj liczbę z zakresu 0-6)');
-//     if (guess < 0 || guess > 6) {
-//         alert('Proszę podać liczbę z zakresu 0-6!');
-//     } else {
-//         guesses = guesses + 1;
-//         //jeśli trafiony
-//         if (guess == location1 || guess == location2 || guess == location3) {
-//             hits = hits + 1;
-//             alert('Trafiony!');
-//             if (hits == 3) {
-//                 isSunk = true;
-//                 alert('Zatopiłeś okręt');
-//             }
-//         } else {
-//             alert('Pudło...');
-//         }
-//     }
-// }
-// var stats = 'Gratulacje zatopiłeś okręt w ' + guesses + ' strzałach!';
-// alert(stats);
+function init() {
+    var fireButton = document.getElementById('fireButton');
+    fireButton.onclick = handleFireButton;
+    var guessInput = document.getElementById('guessInput');
+    guessInput.onkeypress = handleKeyPress;
+
+    model.generateShipLocations();
+};
