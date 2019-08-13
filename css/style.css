@@ -634,6 +634,7 @@ section.contact div.contact {
 
 .contact div.socialmedia a span {
     cursor: pointer;
+    font-family: var(--ffSec);
 }
 
 .contact div.socialmedia p span {
