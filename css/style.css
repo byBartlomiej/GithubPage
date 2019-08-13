@@ -403,7 +403,7 @@ section.animation div.animacja div.strona.active {
     background-image: url(../img/strona.png);
     background-repeat: no-repeat;
     background-size: cover;
-    animation: createSite 1.2s 5.5s linear both;
+    animation: createSite 1.6s 5.5s linear both;
 }
 
 @keyframes createSite {
