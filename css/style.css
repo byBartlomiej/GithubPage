@@ -787,7 +787,7 @@ section.popup.active span.hide {
 }
 
 section.popup.active span.hide:hover {
-    color: green;
+    color: chartreuse;
 }
 
 section.popup div.popup {
