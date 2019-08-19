@@ -63,9 +63,12 @@ div.header {
     letter-spacing: 1px;
     border-top: var(--borderStyle);
     border-bottom: var(--borderStyle);
+    overflow: hidden;
 }
 
-div.header video {}
+div.header video {
+    width: 100%;
+}
 
 div.header nav.menu {
     position: fixed;
@@ -86,7 +89,7 @@ header nav.menu.off {
     left: -180px;
 }
 
-div.header div.header {
+header div.header {
     position: absolute;
     width: 40%;
     top: 55%;
@@ -94,21 +97,21 @@ div.header div.header {
     text-align: right;
 }
 
-div.header div.header h1 {
+header div.header h1 {
 
     color: snow;
     padding: 3%;
     text-shadow: 2px -2px 2px black;
 }
 
-div.header div.header h2 {
+header div.header h2 {
 
     color: snow;
     padding: 2%;
     text-shadow: 2px -2px 2px black;
 }
 
-div.header button.burger,
+header button.burger,
 section.aboutMe a,
 section.game a,
 div.blog article a {
@@ -127,14 +130,14 @@ div.blog article a {
     outline: none;
 }
 
-div.header button.burger.off {
+header button.burger.off {
     background-color: var(--btnBgcOn);
     color: black;
     left: 165px;
     cursor: pointer;
 }
 
-div.header button.burger:hover,
+header button.burger:hover,
 section.aboutMe a:hover,
 section.game a,
 div.blog article a:hover {
@@ -142,11 +145,11 @@ div.blog article a:hover {
     color: black;
 }
 
-div.header button.burger i.off {
+header button.burger i.off {
     display: none;
 }
 
-div.header nav ul {
+header nav ul {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -156,13 +159,13 @@ div.header nav ul {
     list-style: none;
 }
 
-div.header nav ul li {
+header nav ul li {
     position: relative;
     transition: .3s;
     overflow: hidden;
 }
 
-div.header nav ul li a {
+header nav ul li a {
     display: block;
     padding: 5px;
     font-family: var(--ffSec);
@@ -173,7 +176,7 @@ div.header nav ul li a {
     letter-spacing: 2px;
 }
 
-div.header nav ul li a::before {
+header nav ul li a::before {
     content: "";
     position: absolute;
     height: 1px;
@@ -184,28 +187,28 @@ div.header nav ul li a::before {
     transition: .25s ease;
 }
 
-div.header nav ul li a:hover::before {
+header nav ul li a:hover::before {
     right: 0%;
 }
 
 @media (max-width: 680px) {
-    div.header nav.menu {
+    header nav.menu {
         top: 10px;
         height: 240px;
         width: 120px;
     }
 
-    div.header nav ul li a {
+    header nav ul li a {
         font-size: 18px;
     }
 
-    div.header button.burger {
+    header button.burger {
         top: 12px;
         width: 40px;
         height: 40px;
     }
 
-    div.header button.burger.off {
+    header button.burger.off {
         left: 100px;
     }
 }
