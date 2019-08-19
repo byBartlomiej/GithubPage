@@ -48,7 +48,7 @@ body {
 
 /*index.html*/
 /*Header*/
-div.header {
+header {
     position: relative;
     width: 100%;
     margin: 0 auto;
@@ -66,11 +66,11 @@ div.header {
     overflow: hidden;
 }
 
-div.header video {
+header div.header video {
     width: 100%;
 }
 
-div.header nav.menu {
+header nav.menu {
     position: fixed;
     display: flex;
     flex-direction: column;
