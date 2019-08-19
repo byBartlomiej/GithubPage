@@ -66,8 +66,13 @@ header {
     overflow: hidden;
 }
 
-header div.header video {
-    width: 100%;
+header video {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
 }
 
 header nav.menu {
