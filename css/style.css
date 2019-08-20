@@ -68,7 +68,7 @@ header {
 
 header video {
     position: absolute;
-    top: 40%;
+    top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
     min-width: 100%;
@@ -913,9 +913,14 @@ section.aboutMe div.aboutMe p {
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
     section.aboutMe div.aboutMe {
-        top: 6%;
+        top: 2%;
+        left: 20%;
+    }
+
+    section.aboutMe img.Me {
+        left: 25%;
     }
 }
 
