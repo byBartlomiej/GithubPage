@@ -95,23 +95,14 @@ header nav.menu.off {
 
 header div.header {
     position: absolute;
-    width: 40%;
-    top: 55%;
-    right: 2%;
-    text-align: right;
+    width: 95%;
+    bottom: 5%;
+    left: 5%;
 }
 
 header div.header h1 {
 
     color: snow;
-    padding: 3%;
-    text-shadow: 2px -2px 2px black;
-}
-
-header div.header h2 {
-
-    color: snow;
-    padding: 2%;
     text-shadow: 2px -2px 2px black;
 }
 
