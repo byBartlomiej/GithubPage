@@ -96,7 +96,7 @@ header nav.menu.off {
 header div.header {
     position: absolute;
     width: 95%;
-    bottom: 5%;
+    bottom: 10%;
     left: 5%;
 }
 
@@ -463,12 +463,17 @@ section.animation div.animacja div.strona.active {
 
     section.animation div.animacja div.opisAnimacji::after {
         height: 60%;
+        animation: cursor .6s infinite linear, typing 4s 1s steps(22, end) both;
     }
 
     section.animation div.animacja div.projekt div.strona {
         width: 320px;
         height: 160px;
         left: calc(50% - 160px);
+    }
+
+    section.animation div.animacja div.opisAnimacji span {
+        display: none;
     }
 }
 
