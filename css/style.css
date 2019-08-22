@@ -313,6 +313,7 @@ section.animation {
     height: 90vh;
     min-height: 450px;
     padding-top: 3%;
+    background-color: yellow;
 }
 
 section.animation div.animacja {
@@ -320,18 +321,20 @@ section.animation div.animacja {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 80%;
-    overflow: hidden;
+    height: 100%;
+    overflow-x: hidden;
+    background-color: gold;
 }
 
 section.animation div.animacja div.projekt,
 section.animation div.animacja div.opisAnimacji {
     position: relative;
+    background-color: #fff;
 }
 
 section.animation div.animacja div.projekt {
     width: 100%;
-    flex-basis: 70%;
+    flex-basis: 100%;
 }
 
 section.animation div.animacja div.opisAnimacji {
@@ -341,7 +344,6 @@ section.animation div.animacja div.opisAnimacji {
 section.video div.opisVideo,
 section.animation div.animacja div.opisAnimacji.active {
     display: block;
-    flex-basis: 10%;
     font-size: 2rem;
     font-family: 'Ubuntu+Mono', monospace;
 }
@@ -443,13 +445,6 @@ section.animation div.animacja div.strona.active {
     }
 }
 
-@media (max-width: 1023px) {
-
-    section.animation div.animacja div.opisAnimacji::after {
-        border-left: var(--borderStyle);
-    }
-}
-
 @media (max-width: 799px) {
     section.animation {
         height: 350px;
@@ -461,9 +456,8 @@ section.animation div.animacja div.strona.active {
         font-size: 1.8rem;
     }
 
-    section.animation div.animacja div.opisAnimacji::after {
-        height: 60%;
-        animation: cursor .6s infinite linear, typing 4s 1s steps(22, end) both;
+    section.animation div.animacja div.opisAnimacji.active::after {
+        animation: cursor .6s infinite linear, typing 4s 1s steps(21, end) both;
     }
 
     section.animation div.animacja div.projekt div.strona {
