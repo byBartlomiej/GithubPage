@@ -875,7 +875,7 @@ section.aboutMe img.Me {
 section.aboutMe div.aboutMe {
     position: absolute;
     right: 3%;
-    left: 45%;
+    left: 55%;
     top: 30%;
 
 }
@@ -888,7 +888,7 @@ section.aboutMe div.aboutMe p {
 
 @media (max-width: 1200px) {
     section.aboutMe div.aboutMe {
-        left: 55%;
+        left: 65%;
     }
 
     section.aboutMe div.aboutMe p {
@@ -897,25 +897,24 @@ section.aboutMe div.aboutMe p {
 }
 
 @media (max-width: 1024px) {
-
-    section.aboutMe div.aboutMe p {
-        font-size: 1.6rem;
-    }
-
-    section.aboutMe img.Me {
-        height: 80%;
-        animation: none;
-    }
-}
-
-@media (max-width: 800px) {
     section.aboutMe div.aboutMe {
         top: 2%;
         left: 20%;
     }
 
+    section.aboutMe div.aboutMe p {
+        font-size: 1.8rem;
+    }
+
     section.aboutMe img.Me {
-        left: 25%;
+        height: 60%;
+        animation: none;
+    }
+}
+
+@media (max-width: 800px) {
+    section.aboutMe img.Me {
+        left: 10%;
     }
 }
 
