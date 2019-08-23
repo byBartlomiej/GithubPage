@@ -21,9 +21,15 @@ body {
     box-shadow: 0 0 2px 0 black;
 }
 
-@media (max-width: 1599px) {
+@media (max-width: 1650px) {
     :root {
         font-size: 18px;
+    }
+}
+
+@media (max-width: 1380px) {
+    :root {
+        font-size: 17px;
     }
 }
 
