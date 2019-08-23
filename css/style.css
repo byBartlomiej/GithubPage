@@ -2,7 +2,7 @@
 font-family: 'Oswald', sans-serif;
 font-family: 'Roboto Mono', monospace; */
 :root {
-    font-size: 20px;
+    font-size: 22px;
     background-color: #fff;
     --gradient: linear-gradient(145deg, royalblue 2%, #29a6dc 6.5%, white 7%, #29a6dc 8%, #29a6dc 61%, white 63.5%, #29a6dc 64%, #29a6dc 90%, royalblue);
     --bgColor: #29a6dc;
@@ -311,8 +311,8 @@ section.animation {
     display: flex;
     align-items: center;
     height: 90vh;
-    min-height: 450px;
     padding-top: 3%;
+    min-height: 550px;
 }
 
 section.animation div.animacja {
@@ -321,6 +321,7 @@ section.animation div.animacja {
     align-items: center;
     width: 100%;
     height: 100%;
+    min-height: 550px;
     overflow: hidden;
 }
 
@@ -667,7 +668,7 @@ footer {
     background-attachment: fixed;
     font-family: var(--ffSec);
     border-top: var(--borderStyle);
-    color: white;
+    overflow: hidden;
 }
 
 footer p {
