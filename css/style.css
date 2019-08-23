@@ -313,7 +313,6 @@ section.animation {
     height: 90vh;
     min-height: 450px;
     padding-top: 3%;
-    background-color: yellow;
 }
 
 section.animation div.animacja {
@@ -322,14 +321,12 @@ section.animation div.animacja {
     align-items: center;
     width: 100%;
     height: 100%;
-    overflow-x: hidden;
-    background-color: gold;
+    overflow: hidden;
 }
 
 section.animation div.animacja div.projekt,
 section.animation div.animacja div.opisAnimacji {
     position: relative;
-    background-color: #fff;
 }
 
 section.animation div.animacja div.projekt {
@@ -397,8 +394,8 @@ section.animation div.animacja div.opisAnimacji.active::after {
 
 section.animation div.animacja div.strona.active {
     position: absolute;
-    top: 1%;
-    left: calc(50% - 20vw);
+    top: 10%;
+    left: calc(50% - 23vw);
     width: 40vw;
     height: 20vw;
     background-image: url(../img/strona.png);
@@ -409,7 +406,7 @@ section.animation div.animacja div.strona.active {
 
 @keyframes createSite {
     0% {
-        top: 10%;
+        top: 20%;
         left: 150%;
         width: 0;
         height: 0;
@@ -417,7 +414,7 @@ section.animation div.animacja div.strona.active {
     }
 
     50% {
-        top: 10%;
+        top: 20%;
         left: calc(50% - 20vw);
         width: 40vw;
         height: 20vw;
@@ -426,7 +423,7 @@ section.animation div.animacja div.strona.active {
     }
 
     90% {
-        top: 10%;
+        top: 20%;
         left: calc(50% - 20vw);
         width: 40vw;
         height: 20vw;
@@ -436,12 +433,11 @@ section.animation div.animacja div.strona.active {
     }
 
     100% {
-        top: 10%;
+        top: 20%;
         left: calc(50% - 23vw);
         width: 46vw;
         height: 23vw;
         transform: rotate(1800deg);
-        ;
     }
 }
 
@@ -458,12 +454,6 @@ section.animation div.animacja div.strona.active {
 
     section.animation div.animacja div.opisAnimacji.active::after {
         animation: cursor .6s infinite linear, typing 4s 1s steps(21, end) both;
-    }
-
-    section.animation div.animacja div.projekt div.strona {
-        width: 320px;
-        height: 160px;
-        left: calc(50% - 160px);
     }
 
     section.animation div.animacja div.opisAnimacji span {
