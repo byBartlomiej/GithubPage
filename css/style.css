@@ -129,6 +129,7 @@ div.blog article a {
     transition: .1s, left .4s;
     z-index: 2;
     outline: none;
+    box-shadow: 0 0 4px white;
 }
 
 header button.burger.off {
@@ -674,7 +675,6 @@ footer {
     background-attachment: fixed;
     font-family: var(--ffSec);
     border-top: var(--borderStyle);
-    overflow: hidden;
 }
 
 footer p {
