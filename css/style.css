@@ -452,7 +452,6 @@ section.animation div.animacja div.strona.active {
 @media (max-width: 799px) {
     section.animation {
         height: 350px;
-        min-height: 350px;
     }
 
     section.animation div.animacja div.opisAnimacji.active,
@@ -681,6 +680,7 @@ footer p {
     display: block;
     color: #fff;
     text-align: center;
+    height: 100%;
 
 }
 
