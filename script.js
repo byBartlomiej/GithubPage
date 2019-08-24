@@ -15,7 +15,7 @@ $('a.contact').on('click', function () {
         scrollTop: $('.contactHeader').offset().top,
     }, 2000)
 })
-$('a.animation').on('click', function () {
+$('.animation').on('click', function () {
     $('body, html').animate({
         scrollTop: $('section.animation').offset().top,
     }, 1000)
@@ -32,7 +32,7 @@ $('span.reg, span.hide').on('click', function () {
 $(document).on('scroll', function () {
     const $windowHeight = $(window).height();
     const $scrollValue = $(this).scrollTop();
-    // elementy animacji napiu + strony
+    // elementy animacji napisu + strony
     $txtAnim = $('div.projekt')
     const $txtAnimFromTop = $txtAnim.offset().top;
     const $txtAnimHeight = $txtAnim.outerHeight();
@@ -44,8 +44,8 @@ $(document).on('scroll', function () {
     if ($scrollValue < 100) {
         $('.strona, .opisAnimacji, .webDev').removeClass('active');
     }
-    if ($scrollValue > $txtAnimFromTop + $txtAnimHeight - $windowHeight) {
-        // console.log('start');
+    if ($scrollValue > $txtAnimFromTop + $txtAnimHeight - $windowHeight - 100) {
+        // console.log('start animacji');
         $('.strona, .opisAnimacji').addClass('active');
     }
     if ($scrollValue > $webDevFromTop + $webDevHeight * 2 - $windowHeight) {
