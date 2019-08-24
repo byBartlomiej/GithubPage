@@ -450,9 +450,10 @@ section.animation div.animacja div.strona.active {
 }
 
 @media (max-width: 799px) {
-    section.animation {
-        /* min-height: 350px; */
-    }
+
+    /* section.animation {
+    min-height: 350px;
+}*/
 
     section.animation div.animacja div.opisAnimacji.active,
     section.video div.opisVideo {
