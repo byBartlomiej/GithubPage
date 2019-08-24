@@ -317,9 +317,9 @@ section.features div.features2 img:hover {
 section.animation {
     display: flex;
     align-items: center;
-    height: 90vh;
+    height: auto;
     padding-top: 3%;
-    min-height: 550px;
+    /* min-height: 550px; */
 }
 
 section.animation div.animacja {
@@ -328,7 +328,6 @@ section.animation div.animacja {
     align-items: center;
     width: 100%;
     height: 100%;
-    min-height: 550px;
     overflow: hidden;
 }
 
@@ -339,7 +338,8 @@ section.animation div.animacja div.opisAnimacji {
 
 section.animation div.animacja div.projekt {
     width: 100%;
-    flex-basis: 100%;
+    /* flex-basis: 100%; */
+    height: 50vw;
 }
 
 section.animation div.animacja div.opisAnimacji {
@@ -451,7 +451,7 @@ section.animation div.animacja div.strona.active {
 
 @media (max-width: 799px) {
     section.animation {
-        height: 350px;
+        /* min-height: 350px; */
     }
 
     section.animation div.animacja div.opisAnimacji.active,
