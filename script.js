@@ -33,7 +33,7 @@ $(document).on('scroll', function () {
     const $windowHeight = $(window).height();
     const $scrollValue = $(this).scrollTop();
     // elementy animacji napisu + strony
-    $txtAnim = $('div.projekt')
+    $txtAnim = $('section.animation')
     const $txtAnimFromTop = $txtAnim.offset().top;
     const $txtAnimHeight = $txtAnim.outerHeight();
     // elementy contactHeader H1
@@ -44,7 +44,7 @@ $(document).on('scroll', function () {
     if ($scrollValue < 100) {
         $('.strona, .opisAnimacji, .webDev').removeClass('active');
     }
-    if ($scrollValue > $txtAnimFromTop + $txtAnimHeight - $windowHeight - 100) {
+    if ($scrollValue > $txtAnimFromTop + $txtAnimHeight / 2 - $windowHeight) {
         // console.log('start animacji');
         $('.strona, .opisAnimacji').addClass('active');
     }

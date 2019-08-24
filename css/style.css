@@ -319,7 +319,7 @@ section.animation {
     display: flex;
     align-items: center;
     height: auto;
-    padding-top: 3%;
+    padding-top: 5%;
     /* min-height: 550px; */
 }
 
@@ -340,7 +340,7 @@ section.animation div.animacja div.opisAnimacji {
 section.animation div.animacja div.projekt {
     width: 100%;
     /* flex-basis: 100%; */
-    height: 50vw;
+    height: 40vw;
 }
 
 section.animation div.animacja div.opisAnimacji {
@@ -663,7 +663,14 @@ section.contact div.contact {
     .contact div.socialmedia p,
     .contact div.socialmedia a {
         margin: 0 auto;
-        width: 55%;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .contact div.socialmedia p,
+    .contact div.socialmedia a {
+        width: 65%;
     }
 }
 
@@ -684,6 +691,7 @@ footer p {
     color: #fff;
     text-align: center;
     height: 100%;
+    overflow: hidden;
 
 }
 
@@ -741,6 +749,10 @@ footer button.arrow:hover a {
 }
 
 @media (max-width: 500px) {
+    footer {
+        line-height: normal;
+    }
+
     footer button.arrow {
         width: 40px;
         height: 40px;
@@ -909,6 +921,19 @@ section.aboutMe div.aboutMe p {
 @media (max-width: 800px) {
     section.aboutMe img.Me {
         left: 10%;
+    }
+}
+
+@media (max-width: 680px) {
+
+    section.aboutMe a,
+    section.game a,
+    div.blog article a {
+        top: 12px;
+        left: 5px;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
     }
 }
 
