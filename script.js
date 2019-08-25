@@ -18,7 +18,15 @@ $('a.contact').on('click', function () {
 $('.animation').on('click', function () {
     $('body, html').animate({
         scrollTop: $('section.animation').offset().top,
-    }, 1000)
+    }, 1000);
+    //Automatyczne przewijanie do video
+    setTimeout(autoScroll, 9000);
+
+    function autoScroll() {
+        $('body, html').animate({
+            scrollTop: $('section.video').offset().top - 50,
+        }, 1000);
+    }
 })
 $('button.arrow').on('click', function () {
     $('body, html').animate({
