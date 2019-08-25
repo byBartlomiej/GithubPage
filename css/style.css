@@ -339,7 +339,6 @@ section.animation div.animacja div.opisAnimacji {
 
 section.animation div.animacja div.projekt {
     width: 100%;
-    /* flex-basis: 100%; */
     height: 40vw;
 }
 
@@ -348,7 +347,7 @@ section.animation div.animacja div.opisAnimacji {
 }
 
 section.video div.opisVideo,
-section.animation div.animacja div.opisAnimacji.active {
+section.animation div.animacja div.opisAnimacji {
     display: block;
     font-size: 2rem;
     font-family: 'Ubuntu+Mono', monospace;
@@ -405,8 +404,8 @@ section.animation div.animacja div.strona.active {
     position: absolute;
     top: 10%;
     left: calc(50% - 23vw);
-    width: 40vw;
-    height: 20vw;
+    width: 46vw;
+    height: 23vw;
     background-image: url(../img/strona.png);
     background-repeat: no-repeat;
     background-size: cover;

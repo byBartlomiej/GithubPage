@@ -14,7 +14,7 @@ $('a.contact').on('click', function () {
     $('body, html').animate({
         scrollTop: $('.contactHeader').offset().top,
     }, 2000)
-})
+});
 $('.animation').on('click', function () {
     $('body, html').animate({
         scrollTop: $('section.animation').offset().top,
@@ -24,18 +24,18 @@ $('.animation').on('click', function () {
 
     function autoScroll() {
         $('body, html').animate({
-            scrollTop: $('section.video').offset().top - 50,
+            scrollTop: $('section.video').offset().top,
         }, 1000);
     }
-})
+});
 $('button.arrow').on('click', function () {
     $('body, html').animate({
         scrollTop: $('Header').offset().top,
     }, 2000)
-})
+});
 $('span.reg, span.hide').on('click', function () {
     $('section.popup').toggleClass('active');
-})
+});
 //wejscie animacji na scrolla
 $(document).on('scroll', function () {
     const $windowHeight = $(window).height();
@@ -56,6 +56,7 @@ $(document).on('scroll', function () {
         // console.log('start animacji');
         $('.strona, .opisAnimacji').addClass('active');
     }
+
     if ($scrollValue > $webDevFromTop + $webDevHeight * 2 - $windowHeight) {
         $webDev.addClass('active');
     }
