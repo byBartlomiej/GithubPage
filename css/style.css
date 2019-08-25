@@ -201,7 +201,7 @@ header nav ul li a:hover::before {
     }
 
     header nav ul li a {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     header button.burger {
@@ -453,8 +453,7 @@ section.animation div.animacja div.strona.active {
 @media (max-width: 799px) {
 
     /* section.animation {
-    min-height: 350px;
-}*/
+    min-height: 350px;}*/
 
     section.animation div.animacja div.opisAnimacji.active,
     section.video div.opisVideo {
