@@ -342,15 +342,17 @@ section.animation div.animacja div.projekt {
     height: 35vw;
 }
 
-section.animation div.animacja div.opisAnimacji {
-    display: none;
-}
-
 section.video div.opisVideo,
 section.animation div.animacja div.opisAnimacji {
     display: block;
     font-size: 2rem;
     font-family: 'Ubuntu+Mono', monospace;
+    opacity: 0;
+}
+
+section.video div.opisVideo,
+section.animation div.animacja div.opisAnimacji.active {
+    opacity: 1;
 }
 
 section.animation div.animacja div.opisAnimacji.active::after {
