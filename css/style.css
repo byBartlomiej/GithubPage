@@ -882,7 +882,7 @@ section.aboutMe img.Me {
 section.aboutMe div.aboutMe {
     position: absolute;
     right: 3%;
-    left: 55%;
+    left: 45%;
     top: 30%;
 
 }
@@ -891,6 +891,7 @@ section.aboutMe div.aboutMe p {
     font-family: var(--ffSec);
     line-height: 1.3;
     font-size: 2rem;
+    text-align: right;
 }
 
 @media (max-width: 1200px) {
@@ -906,7 +907,7 @@ section.aboutMe div.aboutMe p {
 @media (max-width: 1024px) {
     section.aboutMe div.aboutMe {
         top: 2%;
-        left: 20%;
+        left: 15%;
     }
 
     section.aboutMe div.aboutMe p {
