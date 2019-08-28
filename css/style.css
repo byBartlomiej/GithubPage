@@ -205,7 +205,7 @@ header nav ul li a:hover::before {
     }
 
     header button.burger {
-        top: 12px;
+        top: 60px;
         left: 5px;
         width: 40px;
         height: 40px;

@@ -20,7 +20,7 @@ $('.animation').on('click', function () {
         scrollTop: $('section.animation').offset().top,
     }, 1000);
     //Automatyczne przewijanie do video
-    setTimeout(autoScroll, 9000);
+    setTimeout(autoScroll, 8500);
 
     function autoScroll() {
         $('body, html').animate({
