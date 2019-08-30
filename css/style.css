@@ -320,7 +320,6 @@ section.animation {
     align-items: center;
     height: auto;
     padding-top: 5%;
-    /* min-height: 550px; */
 }
 
 section.animation div.animacja {
@@ -404,8 +403,8 @@ section.animation div.animacja div.opisAnimacji.active::after {
 
 section.animation div.animacja div.strona.active {
     position: absolute;
-    top: 10%;
-    left: calc(50% - 23vw);
+    top: 20%;
+    left: 150%;
     width: 46vw;
     height: 23vw;
     background-image: url(../img/strona.png);

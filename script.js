@@ -41,7 +41,7 @@ $(document).on('scroll', function () {
     const $windowHeight = $(window).height();
     const $scrollValue = $(this).scrollTop();
     // elementy animacji napisu + strony
-    $txtAnim = $('section.animation')
+    const $txtAnim = $('section.animation')
     const $txtAnimFromTop = $txtAnim.offset().top;
     const $txtAnimHeight = $txtAnim.outerHeight();
     // elementy contactHeader H1
@@ -53,8 +53,8 @@ $(document).on('scroll', function () {
         $('.strona, .opisAnimacji, .webDev').removeClass('active');
     }
     if ($scrollValue > $txtAnimFromTop + $txtAnimHeight / 2 - $windowHeight) {
-        // console.log('start animacji');
-        $('.strona, .opisAnimacji').addClass('active');
+        console.log('start animacji');
+        $('div.strona, div.opisAnimacji').addClass('active');
     }
 
     if ($scrollValue > $webDevFromTop + $webDevHeight * 2 - $windowHeight) {
