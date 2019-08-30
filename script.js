@@ -20,7 +20,7 @@ $('.animation').on('click', function () {
         scrollTop: $('section.animation').offset().top,
     }, 1000);
     //Automatyczne przewijanie do video
-    setTimeout(autoScroll, 8500);
+    setTimeout(autoScroll, 9000);
 
     function autoScroll() {
         $('body, html').animate({
@@ -52,12 +52,13 @@ $(document).on('scroll', function () {
     if ($scrollValue < 100) {
         $('.strona, .opisAnimacji, .webDev').removeClass('active');
     }
-    if ($scrollValue > $txtAnimFromTop + $txtAnimHeight / 2 - $windowHeight) {
+    if ($scrollValue > $txtAnimFromTop - 20) {
         console.log('start animacji');
         $('div.strona, div.opisAnimacji').addClass('active');
     }
 
-    if ($scrollValue > $webDevFromTop + $webDevHeight * 2 - $windowHeight) {
+    if ($scrollValue > $webDevFromTop - 20) {
         $webDev.addClass('active');
+        console.log('start weba');
     }
 });
