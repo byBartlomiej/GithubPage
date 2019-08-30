@@ -403,8 +403,8 @@ section.animation div.animacja div.opisAnimacji.active::after {
 
 section.animation div.animacja div.strona.active {
     position: absolute;
-    top: 20%;
-    left: 150%;
+    top: 10%;
+    left: calc(50% - 23vw);
     width: 46vw;
     height: 23vw;
     background-image: url(../img/strona.png);
