@@ -17,7 +17,10 @@ body {
     max-width: 1920px;
     min-width: 360px;
     margin: 0 auto;
-    background-color: #b3cff3;
+    background-image: url(../img/niebo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
     box-shadow: 0 0 2px 0 black;
 }
 
@@ -361,7 +364,10 @@ section.animation div.animacja div.opisAnimacji.active::after {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #b3cff3;
+    background-image: url(../img/niebo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
     border-left: 3px solid black;
     animation: cursor .6s infinite linear, typing 4s 1s steps(31, end) both;
 
@@ -531,7 +537,7 @@ section.contactHeader h1.webDev {
 }
 
 section.contactHeader h1.webDev.active {
-    animation: webDevEntry 1.2s 1s ease both;
+    animation: webDevEntry 1.2s ease both;
 }
 
 @keyframes webDevEntry {
@@ -835,7 +841,11 @@ section.aboutMe {
     width: 100%;
     height: 100vh;
     overflow: hidden;
-    background-color: #dfeefc;
+    /* background-color: #dfeefc; */
+    background-image: url(../img/niebo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
     position: relative;
 }
 
@@ -858,7 +868,7 @@ section.aboutMe img.Me {
     left: 0;
     height: 100%;
     opacity: 0.8;
-    animation: grow 30s linear infinite;
+    animation: grow 25s linear infinite;
 }
 
 @keyframes grow {

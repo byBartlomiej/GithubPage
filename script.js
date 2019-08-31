@@ -21,7 +21,7 @@ function init() {
             scrollTop: $('section.animation').offset().top,
         }, 1000);
         //Automatyczne przewijanie do video
-        setTimeout(autoScroll, 9000);
+        setTimeout(autoScroll, 9500);
 
         function autoScroll() {
             $('body, html').animate({
@@ -39,29 +39,30 @@ function init() {
     });
     //wejscie animacji na scrolla
     $(document).on('scroll', function () {
-        const $windowHeight = $(window).height();
+        // const $windowHeight = $(window).height();  opcjonalnie
         const $scrollValue = $(this).scrollTop();
         // elementy animacji napisu + strony
         const $txtAnim = $('section.animation')
         const $txtAnimFromTop = $txtAnim.offset().top;
-        const $txtAnimHeight = $txtAnim.outerHeight();
+        // const $txtAnimHeight = $txtAnim.outerHeight();   opcjonalnie
         // elementy contactHeader H1
         const $webDev = $('.webDev');
         const $webDevFromTop = $webDev.offset().top;
-        const $webDevHeight = $webDev.outerHeight();
+        // const $webDevHeight = $webDev.outerHeight();   opcjonalnie
 
         if ($scrollValue < 100) {
             $('.strona, .opisAnimacji, .webDev').removeClass('active');
         }
         if ($scrollValue > $txtAnimFromTop - 20) {
-            console.log('start animacji');
+            // console.log('start animacji');
             $('div.strona, div.opisAnimacji').addClass('active');
         }
 
         if ($scrollValue > $webDevFromTop - 20) {
             $webDev.addClass('active');
-            console.log('start weba');
+            // console.log('start weba');
         }
     });
 }
 window.onload = init;
+// console.log('treść załadowana')
