@@ -412,7 +412,7 @@ section.animation div.animacja div.opisAnimacji.active::after {
     }
 }
 
-section.animation div.animacja div.strona.active {
+section.animation div.animacja div.strona {
     position: absolute;
     top: 10%;
     left: calc(50% - 23vw);
@@ -421,7 +421,12 @@ section.animation div.animacja div.strona.active {
     background-image: url(../img/strona.png);
     background-repeat: no-repeat;
     background-size: cover;
+    opacity: 0;
+}
+
+section.animation div.animacja div.strona.active {
     animation: createSite 1.6s 5.5s linear both;
+    opacity: 1;
 }
 
 @keyframes createSite {
