@@ -40,6 +40,11 @@ body {
     :root {
         font-size: 15px;
     }
+
+    body {
+        background-image: none;
+        background-color: #b3cff3;
+    }
 }
 
 @media (max-width: 639px) {
@@ -416,7 +421,7 @@ section.animation div.animacja div.strona.active {
     background-image: url(../img/strona.png);
     background-repeat: no-repeat;
     background-size: cover;
-    animation: createSite 1.6s 5.5s both;
+    animation: createSite 1.6s 5.5s linear both;
 }
 
 @keyframes createSite {
@@ -425,7 +430,10 @@ section.animation div.animacja div.strona.active {
         left: 150%;
         width: 0;
         height: 0;
-        transform: rotate(0);
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
     }
 
     50% {
@@ -434,7 +442,10 @@ section.animation div.animacja div.strona.active {
         width: 40vw;
         height: 20vw;
         transform: rotate(1800deg);
-        ;
+        -webkit-transform: rotate(1800deg);
+        -moz-transform: rotate(1800deg);
+        -o-transform: rotate(1800deg);
+
     }
 
     90% {
@@ -443,8 +454,9 @@ section.animation div.animacja div.strona.active {
         width: 40vw;
         height: 20vw;
         transform: rotate(1800deg);
-        ;
-        ;
+        -webkit-transform: rotate(1800deg);
+        -moz-transform: rotate(1800deg);
+        -o-transform: rotate(1800deg);
     }
 
     100% {
@@ -453,13 +465,20 @@ section.animation div.animacja div.strona.active {
         width: 46vw;
         height: 23vw;
         transform: rotate(1800deg);
+        -webkit-transform: rotate(1800deg);
+        -moz-transform: rotate(1800deg);
+        -o-transform: rotate(1800deg);
+    }
+}
+
+@media (max-width: 1150px) {
+    section.animation div.animacja div.opisAnimacji.active::after {
+        background-image: none;
+        background-color: #b3cff3;
     }
 }
 
 @media (max-width: 799px) {
-
-    /* section.animation {
-    min-height: 350px;}*/
 
     section.animation div.animacja div.opisAnimacji.active,
     section.video div.opisVideo {
