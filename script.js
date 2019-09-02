@@ -53,12 +53,12 @@ function init() {
         if ($scrollValue < 100) {
             $('.strona, .opisAnimacji, .webDev').removeClass('active');
         }
-        if ($scrollValue > $txtAnimFromTop - 1) {
+        if ($scrollValue > $txtAnimFromTop - 10) {
             // console.log('start animacji');
             $('div.strona, div.opisAnimacji').addClass('active');
         }
 
-        if ($scrollValue > $webDevFromTop - 1) {
+        if ($scrollValue > $webDevFromTop - 10) {
             $webDev.addClass('active');
             // console.log('start weba');
         }

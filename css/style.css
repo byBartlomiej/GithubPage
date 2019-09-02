@@ -865,7 +865,6 @@ section.aboutMe {
     width: 100%;
     height: 100vh;
     overflow: hidden;
-    /* background-color: #dfeefc; */
     background-image: url(../img/niebo.jpg);
     background-repeat: no-repeat;
     background-position: center;
