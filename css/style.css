@@ -1128,3 +1128,25 @@ div.blog article p {
     text-align: center;
     padding: 2%;
 }
+
+div.blog img {
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    width: 20%;
+    animation: excavator 8s infinite;
+}
+
+@keyframes excavator {
+    0% {
+        transform: translateX(0);
+    }
+
+    30% {
+        transform: translateX(150%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
