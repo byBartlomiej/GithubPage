@@ -6,6 +6,7 @@ font-family: 'Roboto Mono', monospace; */
     background-color: #fff;
     --gradient: linear-gradient(145deg, royalblue 2%, #29a6dc 6.5%, white 7%, #29a6dc 8%, #29a6dc 61%, white 63.5%, #29a6dc 64%, #29a6dc 90%, royalblue);
     --bgColor: #29a6dc;
+    --bgImage: url(../img/niebo.jpg);
     --borderStyle: 1px solid black;
     --btnBgcOn: rgba(255, 255, 255, .75);
     --btnBgcOff: rgba(0, 0, 0, .75);
@@ -17,7 +18,7 @@ body {
     max-width: 1920px;
     min-width: 360px;
     margin: 0 auto;
-    background-image: url(../img/niebo.jpg);
+    background-image: var(--bgImage);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -369,7 +370,7 @@ section.animation div.animacja div.opisAnimacji.active::after {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(../img/niebo.jpg);
+    background-image: var(--bgImage);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -865,7 +866,7 @@ section.aboutMe {
     width: 100%;
     height: 100vh;
     overflow: hidden;
-    background-image: url(../img/niebo.jpg);
+    background-image: var(--bgImage);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -1109,7 +1110,7 @@ Blog */
 div.blog {
     width: 100%;
     height: 100vh;
-    background-image: url('../img/budowa.jpg');
+    background-image: var(--bgImage);
     background-size: cover;
     background-repeat: no-repeat;
 }
