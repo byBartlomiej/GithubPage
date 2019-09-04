@@ -253,11 +253,13 @@ section.features div img {
     transform: translate(-50%, -50%);
     width: 45%;
     transition: .2s;
+    animation: none;
+
 }
 
 section.features div.features2 img {
     top: 20%;
-    width: 34%;
+    width: 35%;
 }
 
 section.features div.features2 img:nth-of-type(2) {
@@ -291,13 +293,40 @@ section.features div p {
 }
 
 section.features div img:hover {
-    width: 55%;
-    z-index: 1;
+    animation: changeSize .3s linear;
 }
 
 section.features div.features2 img:hover {
-    width: 40%;
     z-index: 1;
+    animation: changeSize2 .3s linear;
+}
+
+@keyframes changeSize {
+    0% {
+        width: 45%;
+    }
+
+    50% {
+        width: 55%;
+    }
+
+    100% {
+        width: 45%;
+    }
+}
+
+@keyframes changeSize2 {
+    0% {
+        width: 35%;
+    }
+
+    50% {
+        width: 45%;
+    }
+
+    100% {
+        width: 35%;
+    }
 }
 
 @media (max-width: 1024px) {
