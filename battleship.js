@@ -143,7 +143,8 @@ function parseGuess(guess) {
         alert('Proszę podać literę (od a do g) i cyfrę (od 0 do 6).');
     } else {
         var firstChar = guess.charAt(0);
-        var row = alphabet.indexOf(firstChar);
+        var firstCharLow = firstChar.toLowerCase();
+        var row = alphabet.indexOf(firstCharLow);
         var column = guess.charAt(1);
 
         if (isNaN(row) || isNaN(column)) {
