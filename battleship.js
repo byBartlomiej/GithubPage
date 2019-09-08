@@ -140,7 +140,7 @@ function parseGuess(guess) {
     var alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g'];
 
     if (guess === null || guess.length !== 2) {
-        alert('Proszę podać literę (od a do g) i cyfrę (od 0 do 6).');
+        alert('Proszę podać literę (od A do G) i cyfrę (od 0 do 6).');
     } else {
         var firstChar = guess.charAt(0);
         var firstCharLow = firstChar.toLowerCase();
