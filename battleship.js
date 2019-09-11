@@ -131,56 +131,37 @@ var controller = {
             var hit = model.fire(location);
             if (hit && model.shipsSunk === model.numShips) {
                 view.displayMessage('Zatopiłeś okręty w ' + this.guesses + " strzałach.");
+                alert('Koniec gry, zatopiłeś/aś okręty w ' + this.guesses + " strzałach.");
             }
         }
     }
 };
 
 function parseGuess(guess) {
-    var alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g'];
+    var row = guess.charAt(0);
+    var column = guess.charAt(1);
 
-    if (guess === null || guess.length !== 2) {
-        alert('Proszę podać literę (od A do G) i cyfrę (od 0 do 6).');
+    if (isNaN(row) || isNaN(column)) {
+        alert('To nie są współrzędne!');
+    } else if (row < 0 || row >= model.boardSize || column < 0 || column >= model.boardSize) {
+        alert('Pole poza planszą!');
     } else {
-        var firstChar = guess.charAt(0);
-        var firstCharLow = firstChar.toLowerCase();
-        var row = alphabet.indexOf(firstCharLow);
-        var column = guess.charAt(1);
-
-        if (isNaN(row) || isNaN(column)) {
-            alert('To nie są współrzędne!');
-        } else if (row < 0 || row >= model.boardSize || column < 0 || column >= model.boardSize) {
-            alert('Pole poza planszą!');
-        } else {
-            return row + column;
-        }
+        return row + column;
     }
-    return null;
+};
+const buttonPressed = document.getElementsByTagName('td')
+for (var i = 0; i < buttonPressed.length; i++) {
+    buttonPressed[i].onclick = handleFireButton;
 };
 
 function handleFireButton() {
-    var guessInput = document.getElementById('guessInput');
-    var guess = guessInput.value;
+    var guess = this.id;
     controller.processGuess(guess);
-    guessInput.value = '';
 };
-
-function handleKeyPress(e) {
-    var fireButton = document.getElementById('fireButton');
-    e = e || window.event;
-    if (e.keyCode === 13) {
-        fireButton.click();
-        return false;
-    }
-};
-
 window.onload = init;
 
 function init() {
-    var fireButton = document.getElementById('fireButton');
+    var fireButton = document.getElementsByTagName('td');
     fireButton.onclick = handleFireButton;
-    var guessInput = document.getElementById('guessInput');
-    guessInput.onkeypress = handleKeyPress;
-
     model.generateShipLocations();
 };

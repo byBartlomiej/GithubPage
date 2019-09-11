@@ -1082,44 +1082,6 @@ section.game div#board table tr td {
     height: 9.35vh;
 }
 
-section.game div#board form {
-    position: absolute;
-    display: flex;
-    top: 10%;
-    left: 70%;
-    width: 15vw;
-    height: 6vh;
-    box-shadow: 0 0 5px 0 chartreuse;
-    font-family: var(--ffMain);
-}
-
-#guessInput,
-#fireButton {
-    width: 35%;
-    height: 100%;
-    text-align: center;
-    border: none;
-    background-color: rgb(137, 250, 137);
-    font-size: 1.2rem;
-}
-
-#fireButton {
-    width: 65%;
-    cursor: pointer;
-    border-left: 5px solid darkorange;
-    transition: .2s;
-    outline: none;
-}
-
-#fireButton:hover {
-    background-color: darkorange;
-}
-
-#fireButton:active {
-    background-color: orangered;
-    border-left: 5px solid orangered;
-}
-
 .hit {
     background-image: url('../img/ship.png');
     background-repeat: no-repeat;
