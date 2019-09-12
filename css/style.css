@@ -6,7 +6,6 @@ font-family: 'Roboto Mono', monospace; */
     background-color: #fff;
     --gradient: linear-gradient(145deg, royalblue 2%, #29a6dc 6.5%, white 7%, #29a6dc 8%, #29a6dc 61%, white 63.5%, #29a6dc 64%, #29a6dc 90%, royalblue);
     --bgColor: #29a6dc;
-    --bgImage: url(../img/niebo.jpg);
     --borderStyle: 1px solid black;
     --btnBgcOn: rgba(255, 255, 255, .75);
     --btnBgcOff: rgba(0, 0, 0, .75);
@@ -18,7 +17,7 @@ body {
     max-width: 1920px;
     min-width: 360px;
     margin: 0 auto;
-    background-image: var(--bgImage);
+    background-image: url(../img/niebo.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -399,7 +398,7 @@ section.animation div.animacja div.opisAnimacji.active::after {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: var(--bgImage);
+    background-image: url(../img/niebo.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -895,7 +894,7 @@ section.aboutMe {
     width: 100%;
     height: 100vh;
     overflow: hidden;
-    background-image: var(--bgImage);
+    background-image: url(../img/niebo.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -1115,7 +1114,7 @@ Blog */
 div.blog {
     width: 100%;
     height: 100vh;
-    background-image: var(--bgImage);
+    background-image: url(../img/niebo.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -1136,6 +1135,39 @@ div.blog section.blogHeader p {
     padding: 2%;
 }
 
+div.blog section.blogArticle {
+    width: 70%;
+    background-color: #fff;
+    margin: 1% auto;
+    box-shadow: 0 0 2px 0 black;
+}
+
+div.blog section.blogArticle h2 {
+    font-family: var(--ffSec);
+    text-align: center;
+    padding: 10px;
+}
+
+div.blog section.blogArticle p {
+    font-family: var(--ffSec);
+    padding: 15px;
+}
+
+div.blog section.blogArticle p a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+}
+
 div.blog section.blogArticle img {
-    width: 40%;
+    margin-bottom: 15px;
+    float: left;
+    width: 55%;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
 }
