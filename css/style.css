@@ -953,16 +953,29 @@ section.aboutMe div.aboutMe p {
     font-family: var(--ffSec);
     line-height: 1.3;
     font-size: 2rem;
-    text-align: right;
+    text-align: center;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1300px) and (orientation: landscape) {
     section.aboutMe div.aboutMe {
-        left: 65%;
+        top: 15%;
+        left: 60%;
     }
 
+    section.aboutMe img.Me {
+        animation: none;
+    }
+}
+
+@media (max-width: 800px) and (orientation: landscape) {
+
     section.aboutMe div.aboutMe p {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
+    }
+
+    section.aboutMe img.Me {
+        left: 10%;
+        animation: none;
     }
 }
 
@@ -978,23 +991,6 @@ section.aboutMe div.aboutMe p {
 
     section.aboutMe img.Me {
         height: 60%;
-        animation: none;
-    }
-}
-
-@media (max-width: 1024px) and (orientation: landscape) {
-    section.aboutMe div.aboutMe {
-        top: 15%;
-        left: 55%;
-    }
-
-    section.aboutMe div.aboutMe p {
-        font-size: 1.6rem;
-        text-align: center;
-    }
-
-    section.aboutMe img.Me {
-        left: 10%;
         animation: none;
     }
 }
