@@ -124,7 +124,7 @@ header div.header h1 {
 header button.burger,
 section.aboutMe a,
 section.game a,
-div.blog article a {
+div.blog section.blogHeader a {
     position: fixed;
     left: 20px;
     top: 50px;
@@ -151,7 +151,7 @@ header button.burger.off {
 header button.burger:hover,
 section.aboutMe a:hover,
 section.game a,
-div.blog article a:hover {
+div.blog section.blogHeader a:hover {
     background-color: var(--btnBgcOn);
     color: black;
 }
@@ -904,14 +904,14 @@ section.aboutMe {
 
 section.aboutMe a,
 section.game a,
-div.blog article a {
+div.blog section.blogHeader a {
     text-align: center;
     line-height: 50px;
     /* reszta styli w sekcji header button */
 }
 
 section.aboutMe a:hover i,
-div.blog article a:hover i {
+div.blog section.blogHeader a:hover i {
     color: black;
 }
 
@@ -1005,7 +1005,7 @@ section.aboutMe div.aboutMe p {
 
     section.aboutMe a,
     section.game a,
-    div.blog article a {
+    div.blog section.blogHeader a {
         top: 12px;
         left: 5px;
         width: 40px;
@@ -1120,38 +1120,22 @@ div.blog {
     background-repeat: no-repeat;
 }
 
-div.blog article {
+div.blog section.blogHeader {
     width: 100%;
     background-color: var(--btnBgcOff);
 }
 
-div.blog article p {
+div.blog section.blogHeader p {
     font-size: 40px;
     color: white;
     text-transform: uppercase;
     font-family: var(--ffMain);
+    letter-spacing: 3px;
     text-align: center;
+    text-shadow: 2px -2px 2px black;
     padding: 2%;
 }
 
-div.blog img {
-    position: absolute;
-    top: 30%;
-    left: 20%;
-    width: 20%;
-    animation: excavator 8s infinite;
-}
-
-@keyframes excavator {
-    0% {
-        transform: translateX(0);
-    }
-
-    30% {
-        transform: translateX(150%);
-    }
-
-    100% {
-        transform: translateX(0);
-    }
+div.blog section.blogArticle img {
+    width: 40%;
 }
