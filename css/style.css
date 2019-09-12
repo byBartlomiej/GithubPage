@@ -944,7 +944,7 @@ section.aboutMe img.Me {
 section.aboutMe div.aboutMe {
     position: absolute;
     right: 3%;
-    left: 45%;
+    left: 55%;
     top: 30%;
 
 }
@@ -966,7 +966,7 @@ section.aboutMe div.aboutMe p {
     }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1024px) and (orientation: portrait) {
     section.aboutMe div.aboutMe {
         top: 2%;
         left: 15%;
@@ -982,13 +982,30 @@ section.aboutMe div.aboutMe p {
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1024px) and (orientation: landscape) {
+    section.aboutMe div.aboutMe {
+        top: 15%;
+        left: 55%;
+    }
+
+    section.aboutMe div.aboutMe p {
+        font-size: 1.6rem;
+        text-align: center;
+    }
+
+    section.aboutMe img.Me {
+        left: 10%;
+        animation: none;
+    }
+}
+
+@media (max-width: 800px) and (orientation: portrait) {
     section.aboutMe img.Me {
         left: 10%;
     }
 }
 
-@media (max-width: 680px) {
+@media (max-width: 680px) and (orientation: portrait) {
 
     section.aboutMe a,
     section.game a,
