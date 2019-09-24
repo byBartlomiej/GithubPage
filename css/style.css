@@ -1138,7 +1138,7 @@ div.blog section.blogHeader p {
 div.blog section.blogArticle {
     width: 70%;
     background-color: #fff;
-    margin: 1% auto 0 auto;
+    margin: 3% auto 0 auto;
     box-shadow: 0 0 2px 0 black;
 }
 
@@ -1150,7 +1150,7 @@ div.blog section.blogArticle h2 {
 
 div.blog section.blogArticle p {
     font-family: var(--ffSec);
-    padding: 15px;
+    padding: 20px;
     text-align: justify;
 }
 
