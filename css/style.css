@@ -1151,6 +1151,7 @@ div.blog section.blogArticle h2 {
 div.blog section.blogArticle p {
     font-family: var(--ffSec);
     padding: 15px;
+    text-align: justify;
 }
 
 div.blog section.blogArticle p a {
