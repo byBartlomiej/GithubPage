@@ -1168,9 +1168,9 @@ div.blog section.blogArticle p a {
 }
 
 div.blog section.blogArticle img {
-    margin-bottom: 15px;
+    padding: 20px 0 0 20px;
     float: left;
-    width: 55%;
+    width: 63%;
 }
 
 .clearfix::after {
