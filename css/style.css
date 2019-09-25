@@ -1178,3 +1178,8 @@ div.blog section.blogArticle img {
     display: block;
     clear: both;
 }
+
+#maxWidth {
+    width: 100%;
+    padding-right: 20px;
+}
