@@ -1142,6 +1142,12 @@ div.blog section.blogArticle {
     box-shadow: 0 0 2px 0 black;
 }
 
+@media (max-width: 680px) {
+    div.blog section.blogArticle {
+        width: 90%;
+    }
+}
+
 div.blog section.blogArticle h2 {
     font-family: var(--ffSec);
     text-align: center;
