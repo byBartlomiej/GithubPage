@@ -404,7 +404,7 @@ section.animation div.animacja div.opisAnimacji.active::after {
     background-position: center;
     background-attachment: fixed;
     border-left: 3px solid black;
-    animation: cursor .6s infinite linear, typing 4s 1s steps(31, end) both;
+    animation: cursor .8s infinite linear, typing 4.5s 1s steps(31, end) both;
 
 }
 
