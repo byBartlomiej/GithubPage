@@ -1158,6 +1158,7 @@ div.blog section.blogArticle p {
     font-family: var(--ffSec);
     padding: 20px;
     text-align: justify;
+    font-size: 1.1rem;
 }
 
 div.blog section.blogArticle p a {
