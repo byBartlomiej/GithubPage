@@ -164,7 +164,7 @@ header nav ul {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    flex-basis: 60%;
+    height: 60%;
     width: 90%;
     list-style: none;
 }
@@ -208,9 +208,13 @@ header nav ul li a:hover::before {
         width: 120px;
     }
 
+    header nav ul {
+        height: 90%;
+    }
+
+
     header nav ul li a {
         font-size: 16px;
-        padding: 7px;
     }
 
     header button.burger {
