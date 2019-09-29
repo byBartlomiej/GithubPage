@@ -380,7 +380,7 @@ section.animation div.animacja div.projekt {
 section.video div.opisVideo,
 section.animation div.animacja div.opisAnimacji {
     display: block;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-family: 'Ubuntu+Mono', monospace;
 }
 

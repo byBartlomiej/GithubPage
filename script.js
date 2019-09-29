@@ -58,7 +58,7 @@ function init() {
         const $webDevFromTop = $webDev.offset().top;
         //Animacja pisania na maszynie
         const divText = document.querySelector('span.text');
-        const text = 'Stworzę Twoją wymarzoną stronę!';
+        const text = 'Stworzę Twoją stronę WWW!';
         let indexText = 0;
 
         if ($scrollValue < 100) {
