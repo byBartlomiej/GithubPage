@@ -40,11 +40,6 @@ body {
     :root {
         font-size: 15px;
     }
-
-    body {
-        background-image: none;
-        background-color: #b3cff3;
-    }
 }
 
 @media (max-width: 639px) {
