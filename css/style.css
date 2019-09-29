@@ -388,62 +388,16 @@ section.animation div.animacja div.opisAnimacji {
     display: block;
     font-size: 2rem;
     font-family: 'Ubuntu+Mono', monospace;
+}
+
+section.animation div.animacja span.cursor {
     opacity: 0;
+    font-family: sans-serif;
+    transition: .2s;
 }
 
-section.video div.opisVideo,
-section.animation div.animacja div.opisAnimacji.active {
+section.animation div.animacja span.cursor.active {
     opacity: 1;
-}
-
-section.animation div.animacja div.opisAnimacji.active::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url(../img/niebo.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    border-left: 3px solid black;
-    animation: cursor .8s infinite linear, typing 4.5s 1s steps(31, end) both;
-
-}
-
-@keyframes cursor {
-    0% {
-        border-color: transparent;
-    }
-
-    10% {
-        border-color: transparent;
-    }
-
-    25% {
-        border-color: black;
-    }
-
-    75% {
-        border-color: black;
-    }
-
-    90% {
-        border-color: transparent;
-    }
-
-    100% {
-        border-color: transparent;
-    }
-}
-
-@keyframes typing {
-    0% {}
-
-    100% {
-        left: 100%;
-    }
 }
 
 section.animation div.animacja div.strona {
@@ -543,13 +497,6 @@ section.video div.opisVideo {
     text-align: center;
     padding-top: 3vh;
     margin-bottom: 10vh;
-}
-
-section.video div.opisVideo::after {
-    content: "";
-    height: 100%;
-    border-left: 3px solid black;
-    animation: cursor .6s infinite linear;
 }
 
 section.video div.tv {
