@@ -37,25 +37,46 @@ function init() {
     $('span.reg, span.hide').on('click', function () {
         $('section.popup').toggleClass('active');
     });
+    //Animacja migającego kursora
+    const spnCursor = document.querySelector('span.cursor');
+    const cursorAnimation = () => {
+        spnCursor.classList.toggle('active');
+    };
+    setInterval(cursorAnimation, 400);
+    //warunek do wyświetlenia animacji pisania na maszynie
+    let doAddLetter = true;
+
     //wejscie animacji na scrolla
     $(document).on('scroll', function () {
-        // const $windowHeight = $(window).height();  opcjonalnie
+
         const $scrollValue = $(this).scrollTop();
         // elementy animacji napisu + strony
-        const $txtAnim = $('section.animation')
+        const $txtAnim = $('section.animation');
         const $txtAnimFromTop = $txtAnim.offset().top;
-        // const $txtAnimHeight = $txtAnim.outerHeight();   opcjonalnie
         // elementy contactHeader H1
         const $webDev = $('.webDev');
         const $webDevFromTop = $webDev.offset().top;
-        // const $webDevHeight = $webDev.outerHeight();   opcjonalnie
+        //Animacja pisania na maszynie
+        const divText = document.querySelector('span.text');
+        const text = 'Stworzę Twoją wymarzoną stronę!';
+        let indexText = 0;
 
         if ($scrollValue < 100) {
-            $('.strona, .opisAnimacji, .webDev').removeClass('active');
+            $('.strona, .webDev').removeClass('active');
         }
         if ($scrollValue > $txtAnimFromTop - 10) {
             // console.log('start animacji');
-            $('div.strona, div.opisAnimacji').addClass('active');
+            $('div.strona').addClass('active');
+            //Animacja pisania na maszynie i kursora
+            if (doAddLetter) {
+                doAddLetter = false;
+                const addLetter = () => {
+                    divText.textContent += text[indexText];
+                    indexText++;
+                    if (indexText === text.length) clearInterval(indexTyping);
+                };
+                const indexTyping = setInterval(addLetter, 150);
+            };
         }
 
         if ($scrollValue > $webDevFromTop - 10) {
