@@ -43,6 +43,7 @@ function init() {
         spnCursor.classList.toggle('active');
     };
     setInterval(cursorAnimation, 400);
+
     //Animacja pisania na maszynie i kursora
     const divText = document.querySelector('span.text');
     const txt = ['Stworzę Twoją wymarzoną stronę!', 'Opublikuję ulubiony film!', 'I o wiele więcej =;)']
@@ -77,7 +78,7 @@ function init() {
         const $webDevFromTop = $webDev.offset().top;
 
         if ($scrollValue < 100) {
-            $('.strona, .webDev').removeClass('active');
+            $('.strona, .webDev, .tv').removeClass('active');
         }
         if ($scrollValue > $txtAnimFromTop - 10) {
             // console.log('start animacji');
