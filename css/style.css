@@ -395,7 +395,7 @@ section.animation div.animacja div.projekt {
 section.video div.opisVideo,
 section.animation div.animacja div.opisAnimacji {
     display: block;
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     font-family: 'Ubuntu+Mono', monospace;
 }
 
@@ -451,7 +451,7 @@ section.animation div.animacja div.strona.active {
         transform: rotate(1800deg);
     }
 
-    35% {
+    32% {
         top: 20%;
         left: calc(50% - 23vw);
         width: 46vw;
