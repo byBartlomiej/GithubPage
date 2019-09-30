@@ -238,6 +238,17 @@ section.features {
     background-color: #dfeefc;
 }
 
+section.forMobile {
+    display: none;
+    text-align: center;
+    padding: 3%;
+    background-color: #dfeefc;
+}
+
+section.forMobile img {
+    width: 70%;
+}
+
 section.features div {
     position: relative;
     height: 100%;
@@ -330,6 +341,10 @@ section.features div.features2 img:hover {
 @media (max-width: 1024px) {
     section.features {
         flex-direction: column;
+    }
+
+    section.forMobile {
+        display: block;
     }
 
     section.features div {
