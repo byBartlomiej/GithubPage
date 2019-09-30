@@ -390,7 +390,6 @@ section.animation div.animacja div.opisAnimacji {
 section.animation div.animacja div.projekt {
     width: 100%;
     height: 35vw;
-    padding-top: 4%;
 }
 
 section.animation div.animacja div.opisAnimacji {
@@ -531,6 +530,10 @@ section.animation div.tv video {
 @media (max-width: 480px) and (orientation: portrait) {
     section.animation {
         height: 50vh;
+    }
+
+    section.animation div.animacja div.projekt {
+        padding-top: 4%;
     }
 }
 
