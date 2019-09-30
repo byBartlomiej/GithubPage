@@ -390,12 +390,12 @@ section.animation div.animacja div.opisAnimacji {
 section.animation div.animacja div.projekt {
     width: 100%;
     height: 35vw;
+    padding-top: 4%;
 }
 
-section.video div.opisVideo,
 section.animation div.animacja div.opisAnimacji {
     display: block;
-    font-size: 1.7rem;
+    font-size: 1.9rem;
     font-family: 'Ubuntu+Mono', monospace;
 }
 
@@ -519,6 +519,19 @@ section.animation div.tv video {
     transform: translate(-50%, -50%);
     width: 83%;
     height: 83%;
+}
+
+@media (max-width: 480px) {
+    section.animation div.animacja div.opisAnimacji {
+        font-size: 1.6rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) and (orientation: portrait) {
+    section.animation {
+        height: 50vh;
+    }
 }
 
 /* Kontakt Header*/
