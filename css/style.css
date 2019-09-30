@@ -442,7 +442,7 @@ section.animation div.animacja div.strona.active {
         transform: rotate(1800deg);
     }
 
-    30% {
+    23% {
         top: 20%;
         left: calc(50% - 20vw);
         width: 40vw;
@@ -450,7 +450,7 @@ section.animation div.animacja div.strona.active {
         transform: rotate(1800deg);
     }
 
-    32% {
+    26% {
         top: 20%;
         left: calc(50% - 23vw);
         width: 46vw;
@@ -484,7 +484,7 @@ section.animation div.tv.active {
     position: relative;
     overflow: hidden;
     margin-top: 5%;
-    animation: createVideo 9.5s 11s both;
+    animation: createVideo 9.8s 11s both;
 }
 
 @keyframes createVideo {

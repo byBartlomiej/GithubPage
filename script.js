@@ -41,7 +41,7 @@ function init() {
     const txt = ['Stworzę Twoją wymarzoną stronę!', 'Opublikuję ulubiony film!', 'I o wiele więcej =;)']
     let indexLetter = 0;
     let indexText = 0;
-    let doAnimation = true;
+    let oneTimeAnimation = true;
 
     const addLetter = () => {
         divText.textContent += txt[indexText][indexLetter];
@@ -73,12 +73,12 @@ function init() {
             //tutaj można coś wykonać przy powrocie na górę strony
         }
         if ($scrollValue > $txtAnimFromTop - 10) {
-            //Implementacja animacji addLetter, createSite, createVideo.
-            if (doAnimation) {
+            //Implementacja animacji addLetter, createSite, createVideo
+            if (oneTimeAnimation) {
                 $('div.strona').addClass('active');
                 $('div.tv').addClass('active');
                 addLetter();
-                doAnimation = false;
+                oneTimeAnimation = false;
             }
         }
 
