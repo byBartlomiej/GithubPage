@@ -78,15 +78,13 @@ function init() {
         const $webDevFromTop = $webDev.offset().top;
 
         if ($scrollValue < 100) {
-            $('.strona, .webDev, .tv').removeClass('active');
+            //tutaj można coś wykonać przy powrocie na górę strony
         }
         if ($scrollValue > $txtAnimFromTop - 10) {
-            // console.log('start animacji');
-            $('div.strona').addClass('active');
-            $('div.tv').addClass('active');
-            //Implementacja pisania na maszynie i kursora
+            //Implementacja animacji addLetter, createSite, createVideo.
             if (doAnimation) {
-                console.log('działa');
+                $('div.strona').addClass('active');
+                $('div.tv').addClass('active');
                 addLetter();
                 doAnimation = false;
             }
