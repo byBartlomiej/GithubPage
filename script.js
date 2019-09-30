@@ -43,8 +43,27 @@ function init() {
         spnCursor.classList.toggle('active');
     };
     setInterval(cursorAnimation, 400);
-    //warunek do wyświetlenia animacji pisania na maszynie
-    let doAddLetter = true;
+    //Animacja pisania na maszynie i kursora
+    const divText = document.querySelector('span.text');
+    const txt = ['Stworzę Twoją wymarzoną stronę!', 'Opublikuję ulubiony film!', 'I o wiele więcej =;)']
+    let indexLetter = 0;
+    let indexText = 0;
+    let doAnimation = true;
+
+    const addLetter = () => {
+        divText.textContent += txt[indexText][indexLetter];
+        indexLetter++;
+        if (indexLetter === txt[indexText].length) {
+            indexText++;
+            if (indexText === txt.length) return;
+            return setTimeout(() => {
+                indexLetter = 0;
+                divText.textContent = '';
+                addLetter();
+            }, 6000)
+        }
+        setTimeout(addLetter, 150)
+    };
 
     //wejscie animacji na scrolla
     $(document).on('scroll', function () {
@@ -56,10 +75,6 @@ function init() {
         // elementy contactHeader H1
         const $webDev = $('.webDev');
         const $webDevFromTop = $webDev.offset().top;
-        //Animacja pisania na maszynie
-        const divText = document.querySelector('span.text');
-        const text = 'Stworzę Twoją stronę WWW!';
-        let indexText = 0;
 
         if ($scrollValue < 100) {
             $('.strona, .webDev').removeClass('active');
@@ -67,16 +82,13 @@ function init() {
         if ($scrollValue > $txtAnimFromTop - 10) {
             // console.log('start animacji');
             $('div.strona').addClass('active');
-            //Animacja pisania na maszynie i kursora
-            if (doAddLetter) {
-                doAddLetter = false;
-                const addLetter = () => {
-                    divText.textContent += text[indexText];
-                    indexText++;
-                    if (indexText === text.length) clearInterval(indexTyping);
-                };
-                const indexTyping = setInterval(addLetter, 150);
-            };
+            $('div.tv').addClass('active');
+            //Implementacja pisania na maszynie i kursora
+            if (doAnimation) {
+                console.log('działa');
+                addLetter();
+                doAnimation = false;
+            }
         }
 
         if ($scrollValue > $webDevFromTop - 10) {
