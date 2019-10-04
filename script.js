@@ -53,7 +53,7 @@ function init() {
                 indexLetter = 0;
                 divText.textContent = '';
                 addLetter();
-            }, 6000)
+            }, 7000)
         }
         setTimeout(addLetter, 150)
     };

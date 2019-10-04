@@ -422,7 +422,7 @@ section.animation div.animacja div.strona {
 
 section.animation div.animacja div.strona.active {
     opacity: 1;
-    animation: createSite 7s 4.5s both;
+    animation: createSite 7s 5s both;
 }
 
 @keyframes createSite {
@@ -484,7 +484,7 @@ section.animation div.tv.active {
     position: relative;
     overflow: hidden;
     margin-top: 5%;
-    animation: createVideo 9.8s 11s both;
+    animation: createVideo 8.3s 14s both;
 }
 
 @keyframes createVideo {
