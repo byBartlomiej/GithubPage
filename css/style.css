@@ -396,6 +396,7 @@ section.animation div.animacja div.opisAnimacji {
     display: block;
     font-size: 1.9rem;
     font-family: 'Ubuntu+Mono', monospace;
+    padding: 0 10% 0 10%;
 }
 
 section.animation div.animacja span.cursor {
@@ -422,7 +423,7 @@ section.animation div.animacja div.strona {
 
 section.animation div.animacja div.strona.active {
     opacity: 1;
-    animation: createSite 7s 5s both;
+    animation: createSite 6.5s 5s both;
 }
 
 @keyframes createSite {
@@ -484,7 +485,7 @@ section.animation div.tv.active {
     position: relative;
     overflow: hidden;
     margin-top: 5%;
-    animation: createVideo 8.3s 14s both;
+    animation: createVideo 8s 12s both;
 }
 
 @keyframes createVideo {

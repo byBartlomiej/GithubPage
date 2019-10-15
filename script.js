@@ -38,7 +38,7 @@ function init() {
 
     //Animacja pisania na maszynie i kursora
     const divText = document.querySelector('span.text');
-    const txt = ['Stworzę Twoją wymarzoną stronę!', 'Opublikuję ulubiony film!', 'I o wiele więcej =;)']
+    const txt = ['Stworzę Twoją wymarzoną stronę!', 'Opublikuję ulubiony film!', 'Dodam animacje, efekty, nowe funkcjonalności, dzięki czemu czytelnie zaprezentujesz najważniejsze informację urzytkownikom oraz strona WWW będzie się świetnie prezentować!']
     let indexLetter = 0;
     let indexText = 0;
     let oneTimeAnimation = true;
@@ -53,7 +53,7 @@ function init() {
                 indexLetter = 0;
                 divText.textContent = '';
                 addLetter();
-            }, 7000)
+            }, 6000)
         }
         setTimeout(addLetter, 150)
     };
