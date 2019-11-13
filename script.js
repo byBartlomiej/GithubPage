@@ -78,7 +78,6 @@ function init() {
                 indexText = 0;
                 divText.textContent = '';
                 oneTimeAnimation = true;
-                console.log("zmieniam na true");
             }, 22500)
         }
         if ($scrollValue > $txtAnimFromTop - 10) {
