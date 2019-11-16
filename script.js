@@ -71,14 +71,14 @@ function init() {
 
         if ($scrollValue < 100) {
             //tutaj można coś wykonać przy powrocie na górę strony
-            setTimeout(() => {
-                $('div.strona').removeClass('active');
-                $('div.tv').removeClass('active');
-                indexLetter = 0;
-                indexText = 0;
-                divText.textContent = '';
-                oneTimeAnimation = true;
-            }, 22500)
+            // setTimeout(() => {
+            //     $('div.strona').removeClass('active');
+            //     $('div.tv').removeClass('active');
+            //     indexLetter = 0;
+            //     indexText = 0;
+            //     divText.textContent = '';
+            //     oneTimeAnimation = true;
+            // }, 22500)
         }
         if ($scrollValue > $txtAnimFromTop - 10) {
             //Implementacja animacji addLetter, createSite, createVideo
