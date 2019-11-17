@@ -41,7 +41,6 @@ function init() {
     const txt = ['Stworzę Twoją wymarzoną stronę!', 'Opublikuję ulubiony film!', 'I wiele więcej! ;)']
     let indexLetter = 0;
     let indexText = 0;
-    let oneTimeAnimation = true;
 
     const addLetter = () => {
         divText.textContent += txt[indexText][indexLetter];
@@ -59,28 +58,21 @@ function init() {
     };
 
     //wejscie animacji na scrolla
-    $(document).on('scroll', function () {
+    // elementy animacji napisu + strony
+    const $txtAnim = $('section.animation');
+    const $txtAnimFromTop = $txtAnim.offset().top;
+    // elementy contactHeader H1
+    const $webDev = $('.webDev');
+    const $webDevFromTop = $webDev.offset().top;
+    let oneTimeAnimation = true;
 
+    $(document).on('scroll', function () {
         const $scrollValue = $(this).scrollTop();
-        // elementy animacji napisu + strony
-        const $txtAnim = $('section.animation');
-        const $txtAnimFromTop = $txtAnim.offset().top;
-        // elementy contactHeader H1
-        const $webDev = $('.webDev');
-        const $webDevFromTop = $webDev.offset().top;
 
         if ($scrollValue < 100) {
-            //tutaj można coś wykonać przy powrocie na górę strony
-            // setTimeout(() => {
-            //     $('div.strona').removeClass('active');
-            //     $('div.tv').removeClass('active');
-            //     indexLetter = 0;
-            //     indexText = 0;
-            //     divText.textContent = '';
-            //     oneTimeAnimation = true;
-            // }, 22500)
+            //tutaj można coś zmienić przy powrocie na góre strony
         }
-        if ($scrollValue > $txtAnimFromTop - 10) {
+        if ($scrollValue > $txtAnimFromTop - 20) {
             //Implementacja animacji addLetter, createSite, createVideo
             if (oneTimeAnimation) {
                 $('div.strona').addClass('active');
@@ -89,10 +81,8 @@ function init() {
                 oneTimeAnimation = false;
             }
         }
-
         if ($scrollValue > $webDevFromTop - 10) {
             $webDev.addClass('active');
-            // console.log('start weba');
         }
     });
 }
