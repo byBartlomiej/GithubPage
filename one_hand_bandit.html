@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap&subset=latin-ext"
+    rel="stylesheet">
+  <link rel="icon" href="images/favicon.png">
+  <link rel="stylesheet" href="pages/one_hand_bandit/style.css">
+  <title></title>
+</head>
+
+<body>
+  <h2 class="result">JEDNORĘKI BANDYTA</h2>
+  <div class="game">
+    <div class="symbol"></div>
+    <div class="symbol"></div>
+    <div class="symbol"></div>
+  </div>
+  <form action="submit"><input type="number" placeholder="Podaj stawkę!"><button class="play">Zakręć!</button></form>
+  <div class="interface">
+    <h3>Twoje saldo to: <span class="money">100</span> B*</h3>
+    <p>Rozegrałeś gier: <span class="gameNumb"></span> ,w tym wygranych: <span class="winNumb"></span> i
+      przegranych: <span class="losesNumb"></span></p>
+  </div>
+  <img class="face" src="pages/one_hand_bandit/face.png" alt="face of The Godfater">
+  <footer>
+    <p>* Bartków ;D</p>
+  </footer>
+  <script>
+    //Moja wersja
+
+    const game = {
+      btnPlay: document.querySelector(".play"),
+      form: document.querySelector("form"),
+      input: document.querySelector("input"),
+      symbols: [...document.querySelectorAll(".symbol")],
+      h2Text: document.querySelector("h2"),
+      plrMoney: document.querySelector(".money"),
+      gamesNumb: document.querySelector(".gameNumb"),
+      winsNumb: document.querySelector(".winNumb"),
+      losesNumb: document.querySelector(".losesNumb"),
+      symbolsArr: [0, 1, 2],
+      draw() {
+        return game.symbolsArr[Math.floor(Math.random() * game.symbolsArr.length)];
+      },
+      checkResult(res1, res2, res3) {
+        game.symbols[0].style.backgroundImage = `url(./pages/one_hand_bandit/${res1}.png)`;
+        game.symbols[1].style.backgroundImage = `url(./pages/one_hand_bandit/${res2}.png)`;
+        game.symbols[2].style.backgroundImage = `url(./pages/one_hand_bandit/${res3}.png)`;
+        if (res1 === res2 && res1 === res3) {
+          player.win = true;
+          wallet.plrMoney += wallet.bet * 4;
+          stats.wins++;
+        } else if ((res1 !== res2 && res1 !== res3 && res2 !== res3)) {
+          player.halfWin = true;
+          wallet.plrMoney += wallet.bet * 2;
+          stats.wins++;
+        } else {
+          player.lose = true;
+          stats.loses++;
+        }
+      },
+      showResult() {
+        stats.games++;
+        game.plrMoney.textContent = wallet.plrMoney;
+        game.gamesNumb.textContent = stats.games;
+        game.winsNumb.textContent = stats.wins;
+        game.losesNumb.textContent = stats.loses;
+        if (player.lose) {
+          game.h2Text.style.color = "orangered";
+          game.h2Text.textContent = `PRZEGRALEŚ ${wallet.bet} B*`;
+        } else if (player.win) {
+          game.h2Text.style.color = "lawngreen";
+          game.h2Text.textContent = `WYGRALEŚ ${wallet.bet * 4} B*`;
+        } else if (player.halfWin) {
+          game.h2Text.style.color = "dodgerblue";
+          game.h2Text.textContent = `CIEKAWY TRAF! ${wallet.bet * 2} B*`;
+        }
+      },
+      startGame(e) {
+        e.preventDefault();
+        if (wallet.plrMoney == 0) {
+          return alert("Przegrałeś wszystko, jeśli chcesz zagrać ponownie, odśwież stronę!");
+        }
+        wallet.bet = game.input.value;
+        if (!wallet.bet || wallet.bet <= 0) {
+          alert("Podaj stawkę!")
+        } else if (wallet.bet > wallet.plrMoney) {
+          alert("Brak środków")
+        } else {
+          wallet.plrMoney -= wallet.bet;
+          game.symbols.forEach(symbol => symbol.classList.toggle("active"));
+          setTimeout(() => {
+            game.symbols.forEach(symbol => symbol.classList.toggle("active"));
+            player.cleaning();
+            const symbol1 = game.draw();
+            const symbol2 = game.draw();
+            const symbol3 = game.draw();
+            game.checkResult(symbol1, symbol2, symbol3);
+            game.showResult();
+          }, 700);
+        }
+      }
+    }
+
+    const stats = {
+      games: 0,
+      wins: 0,
+      loses: 0,
+    }
+
+    const wallet = {
+      plrMoney: 100,
+      bet: 0,
+    }
+    const player = {
+      win: false,
+      halfWin: false,
+      lose: false,
+      cleaning() {
+        player.win = false;
+        player.halfWin = false;
+        player.lose = false;
+      }
+    }
+    game.form.addEventListener("submit", game.startGame);
+  </script>
+</body>
+
+</html>
