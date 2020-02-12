@@ -31,12 +31,22 @@ body {
 }
 
 .dark-filter {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.1);
 }
 .App {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+}
+
+.bg-jumbotron {
+  background-image: url(images/bg_jumbo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.big-font {
+  font-size: 1.5rem !important;
 }
 
 .wrap {
