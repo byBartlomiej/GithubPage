@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/GithubPage/pages/todo_app/static/css/main.36b9e98a.chunk.css",
+    "main.css": "/GithubPage/pages/todo_app/static/css/main.ca62bc51.chunk.css",
     "main.js": "/GithubPage/pages/todo_app/static/js/main.d6bcd0f8.chunk.js",
     "main.js.map": "/GithubPage/pages/todo_app/static/js/main.d6bcd0f8.chunk.js.map",
     "runtime-main.js": "/GithubPage/pages/todo_app/static/js/runtime-main.39a98378.js",
@@ -9,10 +9,10 @@
     "static/js/2.ddfb4899.chunk.js": "/GithubPage/pages/todo_app/static/js/2.ddfb4899.chunk.js",
     "static/js/2.ddfb4899.chunk.js.map": "/GithubPage/pages/todo_app/static/js/2.ddfb4899.chunk.js.map",
     "index.html": "/GithubPage/pages/todo_app/index.html",
-    "precache-manifest.7ea34fff80aea0ed35118b0b86353486.js": "/GithubPage/pages/todo_app/precache-manifest.7ea34fff80aea0ed35118b0b86353486.js",
+    "precache-manifest.4228daff09fabc9c308b29e8df1e08c7.js": "/GithubPage/pages/todo_app/precache-manifest.4228daff09fabc9c308b29e8df1e08c7.js",
     "service-worker.js": "/GithubPage/pages/todo_app/service-worker.js",
     "static/css/2.47e06e2e.chunk.css.map": "/GithubPage/pages/todo_app/static/css/2.47e06e2e.chunk.css.map",
-    "static/css/main.36b9e98a.chunk.css.map": "/GithubPage/pages/todo_app/static/css/main.36b9e98a.chunk.css.map",
+    "static/css/main.ca62bc51.chunk.css.map": "/GithubPage/pages/todo_app/static/css/main.ca62bc51.chunk.css.map",
     "static/js/2.ddfb4899.chunk.js.LICENSE.txt": "/GithubPage/pages/todo_app/static/js/2.ddfb4899.chunk.js.LICENSE.txt",
     "static/media/index.css": "/GithubPage/pages/todo_app/static/media/bg.22f23520.png"
   },
@@ -20,7 +20,7 @@
     "static/js/runtime-main.39a98378.js",
     "static/css/2.47e06e2e.chunk.css",
     "static/js/2.ddfb4899.chunk.js",
-    "static/css/main.36b9e98a.chunk.css",
+    "static/css/main.ca62bc51.chunk.css",
     "static/js/main.d6bcd0f8.chunk.js"
   ]
 }
