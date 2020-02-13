@@ -7,8 +7,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap&subset=latin-ext"
     rel="stylesheet">
-  <link rel="icon" href="images/favicon.png">
-  <link rel="stylesheet" href="pages/one_hand_bandit/style.css">
+  <link rel="icon" href="favicon.png">
+  <link rel="stylesheet" href="style.css">
   <title></title>
 </head>
 
@@ -25,7 +25,7 @@
     <p>Rozegrałeś gier: <span class="gameNumb"></span> ,w tym wygranych: <span class="winNumb"></span> i
       przegranych: <span class="losesNumb"></span></p>
   </div>
-  <img class="face" src="pages/one_hand_bandit/face.png" alt="face of The Godfater">
+  <img class="face" src="face.png" alt="face of The Godfater">
   <footer>
     <p>* Bartków ;D</p>
   </footer>
@@ -47,9 +47,9 @@
         return game.symbolsArr[Math.floor(Math.random() * game.symbolsArr.length)];
       },
       checkResult(res1, res2, res3) {
-        game.symbols[0].style.backgroundImage = `url(./pages/one_hand_bandit/${res1}.png)`;
-        game.symbols[1].style.backgroundImage = `url(./pages/one_hand_bandit/${res2}.png)`;
-        game.symbols[2].style.backgroundImage = `url(./pages/one_hand_bandit/${res3}.png)`;
+        game.symbols[0].style.backgroundImage = `url(./${res1}.png)`;
+        game.symbols[1].style.backgroundImage = `url(./${res2}.png)`;
+        game.symbols[2].style.backgroundImage = `url(./${res3}.png)`;
         if (res1 === res2 && res1 === res3) {
           player.win = true;
           wallet.plrMoney += wallet.bet * 4;
