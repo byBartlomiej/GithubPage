@@ -52,3 +52,7 @@ body {
 .wrap {
   flex-grow: 1;
 }
+
+.bg-main {
+  background-color: rgb(81, 109, 157);
+}

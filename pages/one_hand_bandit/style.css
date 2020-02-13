@@ -34,10 +34,18 @@ div.game div {
     background-color: #222;
     box-shadow: 0 0 8px 2px springgreen;
     text-align: center;
-    background-image: url(3.png);
+    background-image: url(0.png);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+div.game div:nth-child(2) {
+    background-image: url(1.png);
+}
+
+div.game div:nth-child(3) {
+    background-image: url(2.png);
 }
 
 div.game div.symbol.active {

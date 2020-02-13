@@ -21,7 +21,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url(../../images/bg_mouse_move.jpg);
+  background-image: url(./images/bg_mouse_move.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
