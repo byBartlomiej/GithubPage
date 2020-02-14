@@ -30,10 +30,12 @@ main {
 
 .point {
     height: 23vh;
+    min-height: 120px;
 }
 
 .point:nth-of-type(1) {
     height: 20vh;
+    min-height: 75px;
     margin-top: 2vh;
 }
 

@@ -50,7 +50,7 @@ section {
 
 img {
     width: 25%;
-    min-width: 300px;
+    min-width: 250px;
 }
 
 p {
@@ -83,4 +83,10 @@ p {
 .navigation__item.active {
     background-color: salmon;
     box-shadow: 0 0 4px 1px crimson;
+}
+
+@media (max-width: 800px) and (orientation: landscape) {
+    img {
+        min-width: 150px;
+    }
 }
