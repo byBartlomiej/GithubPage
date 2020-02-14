@@ -31,7 +31,7 @@ body {
 }
 
 .dark-filter {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgb(244, 247, 245);
 }
 .App {
   display: flex;
@@ -62,8 +62,8 @@ body {
 .spinner__content {
   width: 6vw;
   height: 6vw;
-  background: white;
-  animation: rotateplane 1.2s infinite ease-in-out;
+  background: rgb(41, 32, 28);
+  animation: rotateplane 1.5s infinite ease-in-out;
 }
 
 @keyframes rotateplane {
@@ -71,8 +71,24 @@ body {
     transform: perspective(120px) rotateX(0deg) rotateY(0deg);
   }
 
+  25% {
+    background-color: rgb(41, 32, 28);
+  }
+
+  25.01% {
+    background-color: rgba(187, 44, 53, .9);
+  }
+
   50% {
     transform: perspective(120px) rotateX(-180deg) rotateY(0deg);
+  }
+
+  75% {
+    background-color: rgba(187, 44, 53, .9);
+  }
+
+  75.01% {
+    background-color: rgb(41, 32, 28);
   }
 
   100% {
