@@ -39,6 +39,31 @@ body {
   min-height: 100vh;
 }
 
+/* colors */
+.bg-main {
+  background-color: rgb(81, 109, 157);
+}
+
+.bg-reserve {
+  background-color: rgba(81, 109, 157, 0.5);
+}
+
+.bg-main-light {
+  background-color: rgba(81, 109, 157, 0.15);
+}
+
+.litleBig-font {
+  font-size: 1.1rem;
+}
+
+.big-font {
+  font-size: 1.7rem !important;
+}
+
+.wrap {
+  flex-grow: 1;
+}
+
 .bg-jumbotron {
   position: relative;
   background-image: url(images/bg_jumbo.jpg);
@@ -96,18 +121,6 @@ body {
   100% {
     transform: perspective(120px) rotateX(-180deg) rotateY(-180deg);
   }
-}
-
-.big-font {
-  font-size: 1.5rem !important;
-}
-
-.wrap {
-  flex-grow: 1;
-}
-
-.bg-main {
-  background-color: rgb(81, 109, 157);
 }
 
 @media (max-width: 990px) {
