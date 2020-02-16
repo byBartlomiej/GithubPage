@@ -6,7 +6,6 @@ body {
     -moz-osx-font-smoothing: grayscale;
     background-image: url(/GithubPage/pages/todo_app/static/media/bg.22f23520.png);
     background-size: cover;
-    background-repeat: no-repeat;
     min-width: 550px;
     max-width: 1920px;
     height: 100vh
