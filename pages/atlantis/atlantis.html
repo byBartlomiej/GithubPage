@@ -2,7 +2,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=400, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
@@ -67,17 +67,23 @@
 
     handleClickTittle1 = () => {
         this.setState({
-            text1Active: !this.state.text1Active
+            text1Active: !this.state.text1Active,
+            text2Active: true,
+            text3Active: true,
         })
     }
     handleClickTittle2 = () => {
         this.setState({
-            text2Active: !this.state.text2Active
+            text1Active: true,
+            text2Active: !this.state.text2Active,
+            text3Active: true,
         })
     }
     handleClickTittle3 = () => {
         this.setState({
-            text3Active: !this.state.text3Active
+            text1Active: true,
+            text2Active: true,
+            text3Active: !this.state.text3Active,
         })
     }
     render() {
