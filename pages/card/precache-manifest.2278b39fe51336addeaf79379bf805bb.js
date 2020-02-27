@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d8b45eb0f90f0b54f0b7a72455e66fa3",
+    "revision": "32657609f193e86483db75c1dc7be06a",
     "url": "/GithubPage/pages/card/index.html"
   },
   {
-    "revision": "fcd85a1f501629f8bbdc",
+    "revision": "544b8806206cc5df4c91",
     "url": "/GithubPage/pages/card/static/css/main.eecf1bec.chunk.css"
   },
   {
-    "revision": "32dfeb62e41eb7a968b5",
-    "url": "/GithubPage/pages/card/static/js/2.579033cb.chunk.js"
+    "revision": "31d3f72510f4a382a0a8",
+    "url": "/GithubPage/pages/card/static/js/2.5b718cb8.chunk.js"
   },
   {
     "revision": "e928fe768baa9832b5bc57eae021f30c",
-    "url": "/GithubPage/pages/card/static/js/2.579033cb.chunk.js.LICENSE"
+    "url": "/GithubPage/pages/card/static/js/2.5b718cb8.chunk.js.LICENSE"
   },
   {
-    "revision": "fcd85a1f501629f8bbdc",
-    "url": "/GithubPage/pages/card/static/js/main.aef18614.chunk.js"
+    "revision": "544b8806206cc5df4c91",
+    "url": "/GithubPage/pages/card/static/js/main.67d233d2.chunk.js"
   },
   {
     "revision": "edb91f3b665ef3f1be10",
@@ -41,7 +41,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   },
   {
     "revision": "eee5d7e8db74b2c6c1e7df7c11c3cece",
-    "url": "/GithubPage/pages/card/static/media/biuro800.eee5d7e8.jpg"
+    "url": "/GithubPage/pages/card/static/media/biuro640.eee5d7e8.jpg"
   },
   {
     "revision": "db95bfd055d437df8b7b9e0dcd36e882",
@@ -52,8 +52,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/GithubPage/pages/card/static/media/okno.ee7949b6.jpg"
   },
   {
+    "revision": "4187c186eff45954d16554e9d8d7c292",
+    "url": "/GithubPage/pages/card/static/media/okno640.4187c186.jpg"
+  },
+  {
     "revision": "2671ca21ea273d71c24a9c46c1acb2f8",
     "url": "/GithubPage/pages/card/static/media/remonty.2671ca21.jpg"
+  },
+  {
+    "revision": "78b4ad840d4010235c9e7391e9c4a8c7",
+    "url": "/GithubPage/pages/card/static/media/remonty640.78b4ad84.jpg"
   },
   {
     "revision": "b3f91ee5144ac261dd43e3fffb48f0da",

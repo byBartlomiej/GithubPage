@@ -1,30 +1,32 @@
 {
   "files": {
     "main.css": "/GithubPage/pages/card/static/css/main.eecf1bec.chunk.css",
-    "main.js": "/GithubPage/pages/card/static/js/main.aef18614.chunk.js",
-    "main.js.map": "/GithubPage/pages/card/static/js/main.aef18614.chunk.js.map",
+    "main.js": "/GithubPage/pages/card/static/js/main.67d233d2.chunk.js",
+    "main.js.map": "/GithubPage/pages/card/static/js/main.67d233d2.chunk.js.map",
     "runtime-main.js": "/GithubPage/pages/card/static/js/runtime-main.b3027cd9.js",
     "runtime-main.js.map": "/GithubPage/pages/card/static/js/runtime-main.b3027cd9.js.map",
-    "static/js/2.579033cb.chunk.js": "/GithubPage/pages/card/static/js/2.579033cb.chunk.js",
-    "static/js/2.579033cb.chunk.js.map": "/GithubPage/pages/card/static/js/2.579033cb.chunk.js.map",
+    "static/js/2.5b718cb8.chunk.js": "/GithubPage/pages/card/static/js/2.5b718cb8.chunk.js",
+    "static/js/2.5b718cb8.chunk.js.map": "/GithubPage/pages/card/static/js/2.5b718cb8.chunk.js.map",
     "index.html": "/GithubPage/pages/card/index.html",
-    "precache-manifest.f5eab3d093df6ec3ea74d499d85f822c.js": "/GithubPage/pages/card/precache-manifest.f5eab3d093df6ec3ea74d499d85f822c.js",
+    "precache-manifest.2278b39fe51336addeaf79379bf805bb.js": "/GithubPage/pages/card/precache-manifest.2278b39fe51336addeaf79379bf805bb.js",
     "service-worker.js": "/GithubPage/pages/card/service-worker.js",
     "static/css/main.eecf1bec.chunk.css.map": "/GithubPage/pages/card/static/css/main.eecf1bec.chunk.css.map",
-    "static/js/2.579033cb.chunk.js.LICENSE": "/GithubPage/pages/card/static/js/2.579033cb.chunk.js.LICENSE",
+    "static/js/2.5b718cb8.chunk.js.LICENSE": "/GithubPage/pages/card/static/js/2.5b718cb8.chunk.js.LICENSE",
     "static/media/index.css": "/GithubPage/pages/card/static/media/bgiSmall.c634c023.jpg",
     "static/media/biuro.jpg": "/GithubPage/pages/card/static/media/biuro.8f720dcd.jpg",
-    "static/media/biuro800.jpg": "/GithubPage/pages/card/static/media/biuro800.eee5d7e8.jpg",
+    "static/media/biuro640.jpg": "/GithubPage/pages/card/static/media/biuro640.eee5d7e8.jpg",
     "static/media/logo.png": "/GithubPage/pages/card/static/media/logo.db95bfd0.png",
     "static/media/okno.jpg": "/GithubPage/pages/card/static/media/okno.ee7949b6.jpg",
+    "static/media/okno640.jpg": "/GithubPage/pages/card/static/media/okno640.4187c186.jpg",
     "static/media/remonty.jpg": "/GithubPage/pages/card/static/media/remonty.2671ca21.jpg",
+    "static/media/remonty640.jpg": "/GithubPage/pages/card/static/media/remonty640.78b4ad84.jpg",
     "static/media/szyba1.jpg": "/GithubPage/pages/card/static/media/szyba1.b3f91ee5.jpg",
     "static/media/szyba2.png": "/GithubPage/pages/card/static/media/szyba2.7ebd3da7.png"
   },
   "entrypoints": [
     "static/js/runtime-main.b3027cd9.js",
-    "static/js/2.579033cb.chunk.js",
+    "static/js/2.5b718cb8.chunk.js",
     "static/css/main.eecf1bec.chunk.css",
-    "static/js/main.aef18614.chunk.js"
+    "static/js/main.67d233d2.chunk.js"
   ]
 }
