@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "62b8b1c3d8b922566936e868bb75596e",
+    "revision": "d8b45eb0f90f0b54f0b7a72455e66fa3",
     "url": "/GithubPage/pages/card/index.html"
   },
   {
-    "revision": "229a6575faa05ae1b6c1",
-    "url": "/GithubPage/pages/card/static/css/main.1a4a624e.chunk.css"
+    "revision": "fcd85a1f501629f8bbdc",
+    "url": "/GithubPage/pages/card/static/css/main.eecf1bec.chunk.css"
   },
   {
-    "revision": "7ee7d66ca9953a44a264",
-    "url": "/GithubPage/pages/card/static/js/2.b124cb4b.chunk.js"
+    "revision": "32dfeb62e41eb7a968b5",
+    "url": "/GithubPage/pages/card/static/js/2.579033cb.chunk.js"
   },
   {
     "revision": "e928fe768baa9832b5bc57eae021f30c",
-    "url": "/GithubPage/pages/card/static/js/2.b124cb4b.chunk.js.LICENSE"
+    "url": "/GithubPage/pages/card/static/js/2.579033cb.chunk.js.LICENSE"
   },
   {
-    "revision": "229a6575faa05ae1b6c1",
-    "url": "/GithubPage/pages/card/static/js/main.9c667c1a.chunk.js"
+    "revision": "fcd85a1f501629f8bbdc",
+    "url": "/GithubPage/pages/card/static/js/main.aef18614.chunk.js"
   },
   {
     "revision": "edb91f3b665ef3f1be10",
@@ -28,8 +28,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/GithubPage/pages/card/static/media/bgi.ef8814f8.jpg"
   },
   {
+    "revision": "c3888a2a873861392f20c0d976fa22ce",
+    "url": "/GithubPage/pages/card/static/media/bgiPortrait.c3888a2a.jpg"
+  },
+  {
+    "revision": "c634c023e9d96c8ece143e2eab29100a",
+    "url": "/GithubPage/pages/card/static/media/bgiSmall.c634c023.jpg"
+  },
+  {
     "revision": "8f720dcd1ec9508764250f5ccdb09153",
     "url": "/GithubPage/pages/card/static/media/biuro.8f720dcd.jpg"
+  },
+  {
+    "revision": "eee5d7e8db74b2c6c1e7df7c11c3cece",
+    "url": "/GithubPage/pages/card/static/media/biuro800.eee5d7e8.jpg"
   },
   {
     "revision": "db95bfd055d437df8b7b9e0dcd36e882",
