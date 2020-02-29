@@ -21,11 +21,6 @@ body {
         background-image: url("wallpaper800.jpg");
     }
 }
-
-@media (max-width:400px) {
-    body {
-        background-image: url("wallpaper400.jpg");
-    }
 }
 
 header {
