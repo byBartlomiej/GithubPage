@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --mainFont: 'Frijole', cursive;
+}
+
+body {
+    position: relative;
+    min-height: 100vh;
+    max-width: 1920px;
+    margin: 0 auto;
+    background-image: url(img/view1.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+img {
+    position: absolute;
+    top: 12vh;
+    left: 10vw;
+    width: 6vw;
+    -webkit-animation: cloudMove 500s infinite linear alternate;
+            animation: cloudMove 500s infinite linear alternate;
+}
+
+img:nth-of-type(2) {
+    top: 20vh;
+    left: -5vw;
+    width: 10vw;
+    -webkit-animation: cloudMove 120s infinite linear alternate;
+            animation: cloudMove 120s infinite linear alternate;
+}
+
+@-webkit-keyframes cloudMove {
+    100% {
+        transform: translateX(90vw);
+    }
+}
+
+@keyframes cloudMove {
+    100% {
+        transform: translateX(90vw);
+    }
+}
+
+@media (max-width: 640px) {
+    img {
+        display: none;
+    }
+}
+
+div.ground {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10vh;
+    border-top: 1px solid #000;
+    background-image: linear-gradient(rgb(55, 33, 24), rgb(138, 71, 36), rgb(55, 33, 24));
+}
+
+div.target {
+    position: absolute;
+    top: 15%;
+    right: 20%;
+    height: 70%;
+    width: 5vw;
+    border-radius: 50%;
+    background-image: radial-gradient(lawngreen 50%, green 93%, #333);
+}
+
+@media (max-width: 640px) {
+    div.target {
+        top: 25%;
+        height: 50%;
+    }
+}
+
+.ball {
+    position: absolute;
+    bottom: 30vh;
+    left: 15vw;
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+    background-image: radial-gradient(rgb(131, 224, 255), dodgerblue);
+    box-shadow: 0 0 1px 1px black;
+    transform: translate(0, 0);
+}
+
+.green {
+    background-image: radial-gradient(rgb(131, 224, 255), chartreuse);
+}
+
+.red {
+    background-image: radial-gradient(rgb(131, 224, 255), crimson);
+}
+
+.spring {
+    position: absolute;
+    bottom: calc(30vh + 1.5vw);
+    left: 0;
+    width: 17vw;
+    height: 2vw;
+    transform: translateX(-15%);
+    background-color: rgb(164, 110, 24);
+    background-image: linear-gradient(0.25turn, rgb(119, 73, 0), rgb(199, 123, 0));
+    border-right: 20px solid #222;
+    box-shadow: 0 0 2px 0 whitesmoke;
+    -webkit-animation: springMove 1s linear infinite alternate;
+            animation: springMove 1s linear infinite alternate;
+    -webkit-animation-play-state: paused;
+            animation-play-state: paused;
+}
+
+.column {
+    position: absolute;
+    bottom: 0;
+    left: 15vw;
+    width: 5vw;
+    height: 30vh;
+    border-radius: 30% 30% 0 0;
+    background-image: linear-gradient(0.25turn, #333, rgb(27, 20, 19) 25%, rgb(55, 33, 24));
+}
+
+.panel {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 38vw;
+    height: 180px;
+    margin: 3% 5% 0 5%;
+    overflow-x: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+@media (max-width: 800px) {
+    .panel {
+        width: 45vw;
+    }
+}
+
+@media (max-width: 640px) {
+    .panel {
+        width: auto;
+        left: 0;
+    }
+}
+
+@media (max-width: 640px) and (orientation: portrait) {
+    .panel {
+        margin-top: 10%;
+    }
+
+}
+
+.action {
+    flex-basis: 30%;
+    border-radius: 1%;
+    border: none;
+    background-color: rgba(255, 68, 0, 0.7);
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    outline: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-family: var(--mainFont);
+    transition: .2s;
+    color: rgb(229, 255, 0);
+    font-size: 1.5rem;
+    box-shadow: 0 0 0 3px rgba(255, 68, 0, 0.85);
+    text-shadow: 0 0 2px black;
+    margin: 0 3px;
+}
+
+.action:hover {
+    background-color: rgba(255, 68, 0, 0.8);
+}
+
+.bar {
+    flex-basis: 20%;
+    border-radius: 1%;
+    background-color: #ddd;
+    box-shadow: 0 0 0 3px rgba(255, 68, 0, 0.85);
+    margin: 0 3px;
+}
+
+.fill {
+    width: 10%;
+    height: 100%;
+    background-color: rgba(255, 68, 0, 0.65);
+    background-image: linear-gradient(0.25turn, rgba(255, 68, 0, 0.9), rgba(255, 68, 0, 0.5));
+    -webkit-animation: fill 1s linear infinite alternate;
+            animation: fill 1s linear infinite alternate;
+    -webkit-animation-play-state: paused;
+            animation-play-state: paused;
+}
+
+.score {
+    flex-basis: 18%;
+    align-self: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: rgb(229, 255, 0);
+    width: 50%;
+    font-size: 1.2rem;
+    border-radius: 1%;
+    background-color: rgba(255, 68, 0, 0.7);
+    box-shadow: 0 0 0 3px rgba(255, 68, 0, 0.85);
+    font-family: var(--mainFont);
+    margin: 0 3px;
+}
+
+em {
+    color: rgb(0, 99, 0)
+}
+
+em:nth-of-type(2) {
+    color: rgb(167, 0, 33)
+}
